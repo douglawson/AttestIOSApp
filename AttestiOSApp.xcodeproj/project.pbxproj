@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F3B97771FA033070050441F /* AccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B97761FA033070050441F /* AccessibilityTests.swift */; };
-		0F3B97791FA0346A0050441F /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B97731FA032DB0050441F /* Attest.framework */; };
-		0F3B977A1FA0346A0050441F /* Attest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B97731FA032DB0050441F /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F5E4FAE1F9E84EB0054CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF081F9E6F120059DB83 /* Main.storyboard */; };
 		0F5E4FAF1F9E85290054CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */; };
 		0F5E4FB01F9E85290054CB04 /* AccessibilityHint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */; };
@@ -71,7 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F3B977A1FA0346A0050441F /* Attest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F3B97731FA032DB0050441F /* Attest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Attest.framework; sourceTree = "<group>"; };
 		0F3B97761FA033070050441F /* AccessibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTests.swift; sourceTree = "<group>"; };
 		0F5E4FD31F9E86D20054CB04 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttestiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3B97791FA0346A0050441F /* Attest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +155,6 @@
 		0FCBDE801F9E6C350059DB83 = {
 			isa = PBXGroup;
 			children = (
-				0F3B97731FA032DB0050441F /* Attest.framework */,
 				0FCBDE8B1F9E6C350059DB83 /* AttestiOSApp */,
 				0FCBDEA01F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEAB1F9E6C350059DB83 /* AttestiOSAppUITests */,
