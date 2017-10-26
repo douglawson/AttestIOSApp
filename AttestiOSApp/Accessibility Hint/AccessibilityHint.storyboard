@@ -4,162 +4,10 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Segmented Control-->
-        <scene sceneID="G0s-J4-b1w">
-            <objects>
-                <viewController storyboardIdentifier="SegmentedControl" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2bD-0P-Izc" customClass="SegmentedControl" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nPP-P7-Lv2"/>
-                        <viewControllerLayoutGuide type="bottom" id="IFl-aB-uT7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UNg-K0-nOu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUk-Ep-iqB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UISegmentedControl Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXn-Sp-iSs">
-                                        <rect key="frame" x="20" y="20" width="335" height="21"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JG9-VO-d2E" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="51" width="315" height="48"/>
-                                        <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-vL-DJ2">
-                                                <rect key="frame" x="10" y="10" width="83" height="29"/>
-                                                <segments>
-                                                    <segment title="Red"/>
-                                                    <segment title="Blue"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.0" green="0.29411764709999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border Color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jii-Wy-bna">
-                                                <rect key="frame" x="207.5" y="14" width="97.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="yCg-vL-DJ2" firstAttribute="top" secondItem="JG9-VO-d2E" secondAttribute="top" constant="10" id="692-aU-i3s"/>
-                                            <constraint firstItem="jii-Wy-bna" firstAttribute="centerY" secondItem="yCg-vL-DJ2" secondAttribute="centerY" id="IeX-9n-ZF9"/>
-                                            <constraint firstAttribute="trailing" secondItem="jii-Wy-bna" secondAttribute="trailing" constant="10" id="O64-tH-64k"/>
-                                            <constraint firstAttribute="bottom" secondItem="yCg-vL-DJ2" secondAttribute="bottom" constant="10" id="XI9-if-odL"/>
-                                            <constraint firstItem="yCg-vL-DJ2" firstAttribute="leading" secondItem="JG9-VO-d2E" secondAttribute="leading" constant="10" id="omE-pU-7AS"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-uP-y5y">
-                                        <rect key="frame" x="20" y="109" width="335" height="130.5"/>
-                                        <string key="text">Each button of the UISegmentedControl, by default, has its own accessibility label, which is simply its visible text.  Without the visual context clues, it is not clear to a VoiceOver user that this control changes the border color.</string>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-gP-V50" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="249.5" width="315" height="48"/>
-                                        <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S5M-38-3xH">
-                                                <rect key="frame" x="10" y="10" width="103" height="29"/>
-                                                <segments>
-                                                    <segment title="Green"/>
-                                                    <segment title="Blue"/>
-                                                </segments>
-                                                <color key="tintColor" red="0.0" green="0.29411764709999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border Color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-PF-BSf">
-                                                <rect key="frame" x="207.5" y="14" width="97.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="S5M-38-3xH" firstAttribute="leading" secondItem="8e4-gP-V50" secondAttribute="leading" constant="10" id="HQI-E6-XY3"/>
-                                            <constraint firstAttribute="trailing" secondItem="3pS-PF-BSf" secondAttribute="trailing" constant="10" id="KI4-HN-tJr"/>
-                                            <constraint firstAttribute="bottom" secondItem="S5M-38-3xH" secondAttribute="bottom" constant="10" id="mGR-nP-Trr"/>
-                                            <constraint firstItem="S5M-38-3xH" firstAttribute="top" secondItem="8e4-gP-V50" secondAttribute="top" constant="10" id="rtV-Dt-kfW"/>
-                                            <constraint firstItem="3pS-PF-BSf" firstAttribute="centerY" secondItem="S5M-38-3xH" secondAttribute="centerY" id="ydY-py-Keg"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoM-Gz-Fw9">
-                                        <rect key="frame" x="20" y="307.5" width="335" height="152.5"/>
-                                        <string key="text">To remedy this, we added accessibility hints to each button in the UISegmentedControl.  Now VoiceOver states, "Green, button. Changes border color to green." Note that the first subview in a UISegmentedControl is its last segment.</string>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA7-SY-y2R">
-                                        <rect key="frame" x="20" y="470" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="HG0-aO-y6B"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="2bD-0P-Izc" eventType="touchUpInside" id="s7m-t9-2LP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="YoM-Gz-Fw9" firstAttribute="top" secondItem="8e4-gP-V50" secondAttribute="bottom" constant="10" id="0aD-Gc-Gif"/>
-                                    <constraint firstItem="eXn-Sp-iSs" firstAttribute="trailing" secondItem="WY1-uP-y5y" secondAttribute="trailing" id="2vG-z0-SDU"/>
-                                    <constraint firstAttribute="trailing" secondItem="eXn-Sp-iSs" secondAttribute="trailing" constant="20" id="BgL-Md-TvJ"/>
-                                    <constraint firstItem="eXn-Sp-iSs" firstAttribute="leading" secondItem="cUk-Ep-iqB" secondAttribute="leading" constant="20" id="DF2-xe-i2k"/>
-                                    <constraint firstItem="JG9-VO-d2E" firstAttribute="leading" secondItem="8e4-gP-V50" secondAttribute="leading" id="EPg-LS-G20"/>
-                                    <constraint firstItem="JG9-VO-d2E" firstAttribute="top" secondItem="eXn-Sp-iSs" secondAttribute="bottom" constant="10" id="F1W-a3-9oN"/>
-                                    <constraint firstItem="YoM-Gz-Fw9" firstAttribute="leading" secondItem="hA7-SY-y2R" secondAttribute="leading" id="L0o-Jz-egz"/>
-                                    <constraint firstItem="JG9-VO-d2E" firstAttribute="leading" secondItem="cUk-Ep-iqB" secondAttribute="leading" constant="30" id="PA0-rE-NIB"/>
-                                    <constraint firstItem="hA7-SY-y2R" firstAttribute="top" secondItem="YoM-Gz-Fw9" secondAttribute="bottom" constant="10" id="Q04-9a-eKE"/>
-                                    <constraint firstItem="WY1-uP-y5y" firstAttribute="trailing" secondItem="YoM-Gz-Fw9" secondAttribute="trailing" id="au5-b4-svC"/>
-                                    <constraint firstAttribute="trailing" secondItem="JG9-VO-d2E" secondAttribute="trailing" constant="30" id="cWh-Gi-6Zz"/>
-                                    <constraint firstItem="WY1-uP-y5y" firstAttribute="top" secondItem="JG9-VO-d2E" secondAttribute="bottom" constant="10" id="f1y-x1-COJ"/>
-                                    <constraint firstItem="JG9-VO-d2E" firstAttribute="trailing" secondItem="8e4-gP-V50" secondAttribute="trailing" id="fAM-kW-gh2"/>
-                                    <constraint firstItem="eXn-Sp-iSs" firstAttribute="leading" secondItem="WY1-uP-y5y" secondAttribute="leading" id="gXg-ej-USx"/>
-                                    <constraint firstItem="WY1-uP-y5y" firstAttribute="leading" secondItem="YoM-Gz-Fw9" secondAttribute="leading" id="mnN-MT-Cw8"/>
-                                    <constraint firstItem="8e4-gP-V50" firstAttribute="top" secondItem="WY1-uP-y5y" secondAttribute="bottom" constant="10" id="oHd-yi-SKp"/>
-                                    <constraint firstItem="eXn-Sp-iSs" firstAttribute="top" secondItem="cUk-Ep-iqB" secondAttribute="top" constant="20" id="pRn-Oi-ZhT"/>
-                                    <constraint firstAttribute="bottom" secondItem="hA7-SY-y2R" secondAttribute="bottom" constant="20" id="rkW-UT-1zg"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cUk-Ep-iqB" firstAttribute="centerX" secondItem="UNg-K0-nOu" secondAttribute="centerX" id="13s-4g-fX3"/>
-                            <constraint firstItem="cUk-Ep-iqB" firstAttribute="width" secondItem="UNg-K0-nOu" secondAttribute="width" id="33o-Qi-WCY"/>
-                            <constraint firstItem="cUk-Ep-iqB" firstAttribute="top" secondItem="nPP-P7-Lv2" secondAttribute="bottom" id="Wza-QR-QMH"/>
-                            <constraint firstItem="IFl-aB-uT7" firstAttribute="top" secondItem="cUk-Ep-iqB" secondAttribute="bottom" id="Yfn-Zl-dHj"/>
-                            <constraint firstItem="eXn-Sp-iSs" firstAttribute="centerX" secondItem="UNg-K0-nOu" secondAttribute="centerX" id="yX5-bW-Ziv"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="brokenDescription" destination="WY1-uP-y5y" id="0XI-nT-59C"/>
-                        <outlet property="brokenLabel" destination="jii-Wy-bna" id="4AZ-o3-9YE"/>
-                        <outlet property="brokenSegmentedControl" destination="yCg-vL-DJ2" id="ygz-AF-Upe"/>
-                        <outlet property="brokenView" destination="JG9-VO-d2E" id="cFG-J8-BDx"/>
-                        <outlet property="fixedDescription" destination="YoM-Gz-Fw9" id="5Pi-LN-akZ"/>
-                        <outlet property="fixedLabel" destination="3pS-PF-BSf" id="cnY-Vx-u3u"/>
-                        <outlet property="fixedSegmentedControl" destination="S5M-38-3xH" id="9G8-Sd-t0x"/>
-                        <outlet property="fixedView" destination="8e4-gP-V50" id="mUR-h0-obN"/>
-                        <outlet property="viewTitle" destination="eXn-Sp-iSs" id="1MQ-GS-UQ0"/>
-                        <outlet property="wcagButton" destination="hA7-SY-y2R" id="Mll-XQ-D1p"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="63P-Zg-kqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-676" y="-17"/>
-        </scene>
         <!--Stepper-->
         <scene sceneID="Ml3-zr-qAn">
             <objects>
@@ -172,10 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yam-Oc-6Z6">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yam-Oc-6Z6">
                                 <rect key="frame" x="0.0" y="20" width="320" height="630"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIStepper Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-1h-TC2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIStepper Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-1h-TC2">
                                         <rect key="frame" x="20" y="20" width="280" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -184,7 +32,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmO-r5-mUv" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="51" width="260" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKE-F4-RKp">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKE-F4-RKp">
                                                 <rect key="frame" x="49.5" y="10" width="161" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -193,7 +41,7 @@
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="n86-bR-9OD">
                                                 <rect key="frame" x="10" y="41" width="94" height="29"/>
                                             </stepper>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-df-sd2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-df-sd2">
                                                 <rect key="frame" x="160" y="45" width="90" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -211,7 +59,7 @@
                                             <constraint firstItem="dKE-F4-RKp" firstAttribute="centerX" secondItem="vmO-r5-mUv" secondAttribute="centerX" id="wcp-Vm-C75"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-EK-h6Z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-EK-h6Z">
                                         <rect key="frame" x="20" y="141" width="280" height="130.5"/>
                                         <string key="text">By default, the UIStepper's Accessibility Label is "Increment" and "Decrement."  By itself, it is not enough information to tell a VoiceOver user what it is incrementing and decrementing.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -221,7 +69,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gu8-F0-c0m" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="281.5" width="260" height="80"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-Gg-fGU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-Gg-fGU">
                                                 <rect key="frame" x="49.5" y="10" width="161" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -230,7 +78,7 @@
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DLo-ww-ODp">
                                                 <rect key="frame" x="10" y="41" width="94" height="29"/>
                                             </stepper>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-aa-OGG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-aa-OGG">
                                                 <rect key="frame" x="160" y="45" width="90" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -248,38 +96,21 @@
                                             <constraint firstItem="KNE-Gg-fGU" firstAttribute="centerX" secondItem="Gu8-F0-c0m" secondAttribute="centerX" id="tLz-si-nwK"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMN-h0-0gf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMN-h0-0gf">
                                         <rect key="frame" x="20" y="371.5" width="280" height="174.5"/>
                                         <string key="text">To fix this, we have added an accessibility hint to each button in the UIStepper.  Now VoiceOver states, "Increment, button. Increases number of tomatoes by 1."  Add accessibility hints to the two subviews of the UIStepper to make UISteppers accessible.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knN-BS-agH">
-                                        <rect key="frame" x="20" y="556" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="oFh-vQ-i8n"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="GSg-xB-5WT" eventType="touchUpInside" id="9Yx-4K-MO7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="knN-BS-agH" firstAttribute="leading" secondItem="IMN-h0-0gf" secondAttribute="leading" id="13D-aD-myj"/>
                                     <constraint firstItem="JRd-EK-h6Z" firstAttribute="leading" secondItem="IMN-h0-0gf" secondAttribute="leading" id="16T-Tz-ZqZ"/>
                                     <constraint firstItem="JRd-EK-h6Z" firstAttribute="top" secondItem="vmO-r5-mUv" secondAttribute="bottom" constant="10" id="8ZL-Ih-uAe"/>
                                     <constraint firstItem="a0s-1h-TC2" firstAttribute="leading" secondItem="yam-Oc-6Z6" secondAttribute="leading" constant="20" id="AW4-dS-bTU"/>
                                     <constraint firstItem="a0s-1h-TC2" firstAttribute="leading" secondItem="JRd-EK-h6Z" secondAttribute="leading" id="CIo-bW-8DF"/>
                                     <constraint firstItem="vmO-r5-mUv" firstAttribute="leading" secondItem="yam-Oc-6Z6" secondAttribute="leading" constant="30" id="CJr-jI-Wpo"/>
-                                    <constraint firstAttribute="bottom" secondItem="knN-BS-agH" secondAttribute="bottom" constant="20" id="DRm-2F-kiM"/>
                                     <constraint firstItem="IMN-h0-0gf" firstAttribute="top" secondItem="Gu8-F0-c0m" secondAttribute="bottom" constant="10" id="HLa-44-OY9"/>
-                                    <constraint firstItem="knN-BS-agH" firstAttribute="top" secondItem="IMN-h0-0gf" secondAttribute="bottom" constant="10" id="PNy-KW-yEF"/>
                                     <constraint firstAttribute="trailing" secondItem="a0s-1h-TC2" secondAttribute="trailing" constant="20" id="Tql-7Q-bzU"/>
                                     <constraint firstItem="JRd-EK-h6Z" firstAttribute="trailing" secondItem="IMN-h0-0gf" secondAttribute="trailing" id="Zsl-Ua-uw4"/>
                                     <constraint firstAttribute="trailing" secondItem="vmO-r5-mUv" secondAttribute="trailing" constant="30" id="dv2-5r-fKe"/>
@@ -304,15 +135,9 @@
                     <size key="freeformSize" width="320" height="650"/>
                     <connections>
                         <outlet property="brokenCounter" destination="F8i-df-sd2" id="3h9-Oh-fA5"/>
-                        <outlet property="brokenDescription" destination="JRd-EK-h6Z" id="m2C-8u-yRS"/>
                         <outlet property="brokenStepper" destination="n86-bR-9OD" id="TzO-3g-EH1"/>
-                        <outlet property="brokenTitle" destination="dKE-F4-RKp" id="ryj-n3-ETE"/>
                         <outlet property="fixedCounter" destination="bdC-aa-OGG" id="gBa-Fs-5w6"/>
-                        <outlet property="fixedDescription" destination="IMN-h0-0gf" id="g5Z-JV-Jlv"/>
                         <outlet property="fixedStepper" destination="DLo-ww-ODp" id="aQN-tw-OWi"/>
-                        <outlet property="fixedTitle" destination="KNE-Gg-fGU" id="fbO-eZ-azv"/>
-                        <outlet property="viewTitle" destination="a0s-1h-TC2" id="ma6-4K-f4w"/>
-                        <outlet property="wcagButton" destination="knN-BS-agH" id="aHT-a3-nI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKQ-JC-ifz" userLabel="First Responder" sceneMemberID="firstResponder"/>

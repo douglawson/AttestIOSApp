@@ -20,31 +20,32 @@ public enum Demos: Int {
     case Overlap_OverlappingLabel
     case DynamicType_FontType
     case DynamicType_NoScrollView
-    case AccessibilityHint_SegmentedControl
+    //case AccessibilityHint_SegmentedControl
     case AccessibilityHint_Stepper
+    //case AccessibilityHint_StepperBestPractice
     case InHighlight_NotInFrame
     case NestedA11yElements_ButtonsNestedInA11yElement
     case SpeakableText_ActiveControl
     case SpeakableText_InformativeControl
     case TouchTargetSize_DefaultTouchTargetSize
 
-    func makeViewController() -> UIViewController {
+    public func makeViewController() -> UIViewController {
         return UIStoryboard(name: self.storyBoardName(), bundle: nil).instantiateViewController(withIdentifier: self.viewControllerName())
     }
 
-    func storyBoardName() -> String {
+    public func storyBoardName() -> String {
         return String("\(self)".components(separatedBy: "_")[0])
     }
 
- func viewControllerName() -> String {
+    public func viewControllerName() -> String {
         return String("\(self)".components(separatedBy: "_")[1])
     }
 
-    static func count() -> Int {
+    public static func count() -> Int {
         return names().count
     }
 
-    static func values() -> [Demos] {
+    public static func values() -> [Demos] {
         var results: [Demos] = []
 
         for index in 0 ... Int.max {
@@ -58,7 +59,7 @@ public enum Demos: Int {
         return results
     }
 
-    static func names() -> [String] {
+    public static func names() -> [String] {
         var results: [String] = []
 
         for index in 0 ... Int.max {

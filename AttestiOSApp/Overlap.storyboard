@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="-650" y="29"/>
         </scene>
-        <!--Overlapping Button-->
+        <!--View Controller-->
         <scene sceneID="XJJ-Bj-afc">
             <objects>
-                <viewController storyboardIdentifier="OverlappingButton" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t7Y-YD-lca" customClass="OverlappingButton" customModule="TestApp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlappingButton" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t7Y-YD-lca" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5RG-kC-FUY"/>
                         <viewControllerLayoutGuide type="bottom" id="3np-6k-rU6"/>
@@ -267,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="-20" y="28"/>
         </scene>
-        <!--Overlapping Label-->
+        <!--View Controller-->
         <scene sceneID="Zw6-Ry-2Nh">
             <objects>
-                <viewController storyboardIdentifier="OverlappingLabel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zTw-mG-u7O" customClass="OverlappingLabel" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlappingLabel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zTw-mG-u7O" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wrD-i7-Ah8"/>
                         <viewControllerLayoutGuide type="bottom" id="3I3-P4-Qeb"/>
@@ -291,13 +291,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxI-jm-cJb" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="51" width="315" height="47"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intersects with Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgI-fK-BuM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intersects with Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgI-fK-BuM">
                                                 <rect key="frame" x="79" y="10" width="158.5" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This intersects." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVN-F5-bE7">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This intersects." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVN-F5-bE7">
                                                 <rect key="frame" x="99.5" y="16" width="117" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -386,10 +386,10 @@
             </objects>
             <point key="canvasLocation" x="622" y="28"/>
         </scene>
-        <!--Overlapping Corner Case-->
+        <!--View Controller-->
         <scene sceneID="JNK-N1-mDi">
             <objects>
-                <viewController storyboardIdentifier="OverlappingCornerCase" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hDR-Gq-Kib" customClass="OverlappingCornerCase" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlappingCornerCase" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hDR-Gq-Kib" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m8A-pQ-DBE"/>
                         <viewControllerLayoutGuide type="bottom" id="1kl-hZ-47k"/>

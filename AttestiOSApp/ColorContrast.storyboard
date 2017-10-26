@@ -4,14 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Simple Alpha Blend-->
+        <!--Background Blending-->
         <scene sceneID="MXe-qj-2Ef">
             <objects>
-                <viewController storyboardIdentifier="BlendedBackground" title="Simple Alpha Blend" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlendedBackground" title="Background Blending" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7b-Ea-d4r"/>
                         <viewControllerLayoutGuide type="bottom" id="bBf-ZQ-kNL"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="-793" y="72"/>
         </scene>
-        <!--Adv Alpha Blending-->
+        <!--Text Blending-->
         <scene sceneID="dCq-mz-IbZ">
             <objects>
-                <viewController storyboardIdentifier="BlendedText" title="Adv Alpha Blending" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlendedText" title="Text Blending" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GlR-Wg-kY9"/>
                         <viewControllerLayoutGuide type="bottom" id="ClF-J1-SVZ"/>
@@ -159,13 +159,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-fr-B0m" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="51" width="315" height="82.5"/>
+                                        <rect key="frame" x="30" y="51" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4W-9X-amR">
-                                                <rect key="frame" x="10" y="10" width="295" height="62.5"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text opacity = 0.75, with background opacity = 0.67" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-hs-lMp">
-                                                        <rect key="frame" x="10" y="10" width="275" height="42.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text with Alpha &lt; 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-hs-lMp">
+                                                        <rect key="frame" x="10" y="10" width="275" height="20.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66641695209999996" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="0.53320691993199476" green="0.53881962435233155" blue="0.53881962435233155" alpha="0.58159110915492962" colorSpace="custom" customColorSpace="sRGB"/>
@@ -190,20 +190,20 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-VF-VeQ">
-                                        <rect key="frame" x="20" y="143.5" width="335" height="86.5"/>
+                                        <rect key="frame" x="20" y="121.5" width="335" height="86.5"/>
                                         <string key="text">The label's text has an alpha of 0.75, and its background color has an alpha of 0.67.  Its superview has an alpha of 0.8.  Color contrast ratio is 2.4:1.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Qc-95s" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="240" width="315" height="82.5"/>
+                                        <rect key="frame" x="30" y="218" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-uy-uFB">
-                                                <rect key="frame" x="10" y="10" width="295" height="62.5"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text opacity = 0.75, with background opacity = 0.67" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-K7-L3B">
-                                                        <rect key="frame" x="10" y="10" width="275" height="42.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Better Contrast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-K7-L3B">
+                                                        <rect key="frame" x="10" y="10" width="275" height="20.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66641695209999996" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
@@ -228,7 +228,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoA-Gz-C3r">
-                                        <rect key="frame" x="20" y="332" width="335" height="64.5"/>
+                                        <rect key="frame" x="20" y="288" width="335" height="64.5"/>
                                         <string key="text">Same alpha values, with different colors. This time the text color is black with an alpha of 0.8. Color contrast ratio is 9.2:1.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
@@ -272,7 +272,7 @@
         <!--Color Contrast-->
         <scene sceneID="SmE-yd-QTK">
             <objects>
-                <viewController storyboardIdentifier="ColorContrast" title="Color Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" customClass="BackgroundColor" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ColorContrast" title="Color Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MkC-ol-dER"/>
                         <viewControllerLayoutGuide type="bottom" id="jZH-Cf-Hmx"/>
@@ -395,10 +395,10 @@
             </objects>
             <point key="canvasLocation" x="487" y="72"/>
         </scene>
-        <!--Large Text-->
+        <!--View Controller-->
         <scene sceneID="qVu-5E-7ee">
             <objects>
-                <viewController storyboardIdentifier="LargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" customClass="LargeText" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fy-Ab-xJz"/>
                         <viewControllerLayoutGuide type="bottom" id="BeS-5T-3zR"/>

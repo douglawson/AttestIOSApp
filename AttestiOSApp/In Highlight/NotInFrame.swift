@@ -16,9 +16,8 @@ class NotInFrame: DUViewController, UIScrollViewDelegate {
         super.viewDidAppear(animated)
         self.setA11yPaths()
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    override func viewDidLayoutSubviews() {
         setA11yPaths()
     }
     
@@ -27,7 +26,7 @@ class NotInFrame: DUViewController, UIScrollViewDelegate {
     }
     
     private func setA11yPaths() {
-        let frame = brokenButton.frame
+        let frame = brokenButton.getA11yFrame()
         brokenButton.accessibilityPath = UIBezierPath(rect:CGRect.init(x: frame.origin.x, y: frame.origin.y, width: frame.width / 2, height: frame.height / 2))
     }
 }

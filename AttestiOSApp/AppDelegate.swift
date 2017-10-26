@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Attest
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        Attest.startServer(48484)
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
