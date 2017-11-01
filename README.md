@@ -14,8 +14,6 @@ Unit testing with the Attest for iOS Framework is easy! Check out the examples b
 
 [A simple Accessibility Test](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/SimpleTest.swift)
 
-[Our Integration Tests for this App](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/DemoTests.swift)
-
 [Ignore Specific Violations](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/IgnoreViolations.swift)
 
 [Custom Rules](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/CustomRules.swift)
