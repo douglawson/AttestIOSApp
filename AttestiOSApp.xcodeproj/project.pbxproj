@@ -34,6 +34,10 @@
 		0F5E4FD11F9E857D0054CB04 /* TouchTargetSizeScreenDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */; };
 		0F5E4FD21F9E857D0054CB04 /* VoiceOverNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */; };
 		0F5E4FD41F9E86D20054CB04 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E4FD31F9E86D20054CB04 /* Media.xcassets */; };
+		0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */; };
+		0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */; };
+		0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */; };
+		0F69FB9B1FA9AD7B00A07BA4 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */; };
 		0FCBDEAD1F9E6C350059DB83 /* AttestiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEAC1F9E6C350059DB83 /* AttestiOSAppUITests.swift */; };
 		0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */; };
 		0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
@@ -78,6 +82,10 @@
 		0F4F11991FA265E6005D6D4B /* Attest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Attest.framework; path = Framework/Release/Attest.framework; sourceTree = "<group>"; };
 		0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAdjustingView.swift; sourceTree = "<group>"; };
 		0F5E4FD31F9E86D20054CB04 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTest.swift; sourceTree = "<group>"; };
+		0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRules.swift; sourceTree = "<group>"; };
+		0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolations.swift; sourceTree = "<group>"; };
+		0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttestiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDE981F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +235,10 @@
 			children = (
 				0FCBDEA31F9E6C350059DB83 /* Info.plist */,
 				0F3B97761FA033070050441F /* AccessibilityTests.swift */,
+				0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */,
+				0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */,
+				0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */,
+				0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */,
 			);
 			path = AttestiOSAppTests;
 			sourceTree = "<group>";
@@ -426,6 +438,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3B97771FA033070050441F /* AccessibilityTests.swift in Sources */,
+				0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */,
+				0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */,
+				0F69FB9B1FA9AD7B00A07BA4 /* DemoTests.swift in Sources */,
+				0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
