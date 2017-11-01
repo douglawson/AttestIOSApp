@@ -27,4 +27,5 @@ Coming soon!
 
 [Syncing Results with the Attest Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
 
+## Disclaimer
 All Rights Reserved
