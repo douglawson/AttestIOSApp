@@ -1,8 +1,5 @@
 import XCTest
-
 import Attest
-
-import AttestiOSApp
 
 class DemoTests: XCTestCase {
 
