@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buU-j8-oga">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buU-j8-oga">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Auto Adjust Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4n-2P-Kyg">
@@ -76,6 +76,7 @@
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="leading" secondItem="buU-j8-oga" secondAttribute="leading" constant="20" id="Kji-uS-Fr9"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="leading" secondItem="hs3-Wq-Yeu" secondAttribute="leading" id="L2h-fT-HFm"/>
                                     <constraint firstItem="H0U-2i-rB7" firstAttribute="top" secondItem="hs3-Wq-Yeu" secondAttribute="bottom" constant="10" id="LmJ-3z-I7f"/>
+                                    <constraint firstAttribute="bottom" secondItem="H0U-2i-rB7" secondAttribute="bottom" constant="10" id="SV6-y8-2GX"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="trailing" secondItem="hs3-Wq-Yeu" secondAttribute="trailing" id="gBn-Gh-tig"/>
                                     <constraint firstItem="hs3-Wq-Yeu" firstAttribute="trailing" secondItem="H0U-2i-rB7" secondAttribute="trailing" id="zzW-bB-xBm"/>
                                 </constraints>
@@ -107,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-Qu-67i">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-Qu-67i">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxq-Wa-zsf">
@@ -155,6 +156,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Cjx-4N-nrb" secondAttribute="bottom" constant="10" id="FwU-ra-scj"/>
                                     <constraint firstItem="Dxq-Wa-zsf" firstAttribute="trailing" secondItem="N3q-gI-FhE" secondAttribute="trailing" id="Lpd-vj-jez"/>
                                     <constraint firstAttribute="trailing" secondItem="Dxq-Wa-zsf" secondAttribute="trailing" constant="20" id="Otz-L2-jnZ"/>
                                     <constraint firstItem="Dxq-Wa-zsf" firstAttribute="leading" secondItem="N3q-gI-FhE" secondAttribute="leading" id="QbB-C5-LaQ"/>

@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,20 +58,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7M-rE-edD">
-                                        <rect key="frame" x="20" y="440.5" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="Xxm-qi-Pgc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="PK3-8c-wWL" eventType="touchUpInside" id="Ni1-Pl-KX5"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZ5-M9-nuq" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="164" width="315" height="82"/>
                                         <subviews>
@@ -118,7 +104,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="fZ5-M9-nuq" firstAttribute="top" secondItem="FDE-d4-eYs" secondAttribute="bottom" constant="10" id="35e-ni-KQN"/>
-                                    <constraint firstAttribute="bottom" secondItem="r7M-rE-edD" secondAttribute="bottom" constant="20" id="Bab-Mc-5gR"/>
                                     <constraint firstItem="A5N-MR-2qM" firstAttribute="leading" secondItem="FDE-d4-eYs" secondAttribute="leading" id="GIe-F1-aVB"/>
                                     <constraint firstAttribute="trailing" secondItem="19U-Pq-peY" secondAttribute="trailing" constant="30" id="GJb-KQ-prj"/>
                                     <constraint firstItem="fZ5-M9-nuq" firstAttribute="trailing" secondItem="19U-Pq-peY" secondAttribute="trailing" id="HoQ-9m-MMt"/>
@@ -127,12 +112,11 @@
                                     <constraint firstItem="a4v-jT-NLt" firstAttribute="trailing" secondItem="FDE-d4-eYs" secondAttribute="trailing" id="M6A-ht-2lo"/>
                                     <constraint firstAttribute="trailing" secondItem="a4v-jT-NLt" secondAttribute="trailing" constant="20" id="Vub-xm-c74"/>
                                     <constraint firstItem="a4v-jT-NLt" firstAttribute="leading" secondItem="xRE-8R-fJs" secondAttribute="leading" constant="20" id="cAi-yE-URv"/>
+                                    <constraint firstAttribute="bottom" secondItem="A5N-MR-2qM" secondAttribute="bottom" constant="10" id="j46-9M-8fm"/>
                                     <constraint firstItem="A5N-MR-2qM" firstAttribute="top" secondItem="fZ5-M9-nuq" secondAttribute="bottom" constant="10" id="kEi-KU-vHp"/>
                                     <constraint firstItem="fZ5-M9-nuq" firstAttribute="leading" secondItem="19U-Pq-peY" secondAttribute="leading" id="mgo-co-Y7n"/>
-                                    <constraint firstItem="r7M-rE-edD" firstAttribute="top" secondItem="A5N-MR-2qM" secondAttribute="bottom" constant="10" id="n33-rg-qFz"/>
                                     <constraint firstItem="19U-Pq-peY" firstAttribute="top" secondItem="a4v-jT-NLt" secondAttribute="bottom" constant="10" id="qRa-OA-9i8"/>
                                     <constraint firstItem="a4v-jT-NLt" firstAttribute="leading" secondItem="FDE-d4-eYs" secondAttribute="leading" id="two-bn-Jdb"/>
-                                    <constraint firstItem="A5N-MR-2qM" firstAttribute="leading" secondItem="r7M-rE-edD" secondAttribute="leading" id="uZ8-0I-wr5"/>
                                     <constraint firstItem="FDE-d4-eYs" firstAttribute="top" secondItem="19U-Pq-peY" secondAttribute="bottom" constant="10" id="yKi-fV-doh"/>
                                     <constraint firstItem="A5N-MR-2qM" firstAttribute="trailing" secondItem="FDE-d4-eYs" secondAttribute="trailing" id="yaV-ox-dzi"/>
                                 </constraints>
@@ -156,7 +140,6 @@
                         <outlet property="fixedView" destination="fZ5-M9-nuq" id="qWf-A8-rsN"/>
                         <outlet property="switchLabel" destination="lej-ks-9nv" id="PgJ-6p-Fvw"/>
                         <outlet property="viewTitle" destination="a4v-jT-NLt" id="okW-dn-JHh"/>
-                        <outlet property="wcagButton" destination="r7M-rE-edD" id="7fv-pl-4d1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyf-Ni-q8S" userLabel="First Responder" sceneMemberID="firstResponder"/>

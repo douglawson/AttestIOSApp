@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -129,20 +129,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2I-U3-rxw">
-                                        <rect key="frame" x="20" y="468" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="m2T-g8-IrT"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="dKl-bI-op5" eventType="touchUpInside" id="Uhy-am-H46"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="W75-P4-g5q" secondAttribute="trailing" constant="20" id="3fd-IG-nHv"/>
@@ -152,11 +138,9 @@
                                     <constraint firstItem="BAs-zd-q2C" firstAttribute="leading" secondItem="Nbb-LK-uKT" secondAttribute="leading" constant="30" id="E6b-2a-tSc"/>
                                     <constraint firstItem="1ZS-Ae-kWP" firstAttribute="trailing" secondItem="rxs-Ek-l27" secondAttribute="trailing" id="FO3-eh-XQn"/>
                                     <constraint firstItem="1ZS-Ae-kWP" firstAttribute="top" secondItem="BAs-zd-q2C" secondAttribute="bottom" constant="10" id="Hvz-6L-QVu"/>
-                                    <constraint firstItem="E2I-U3-rxw" firstAttribute="top" secondItem="rxs-Ek-l27" secondAttribute="bottom" constant="10" id="WeU-h8-rUE"/>
                                     <constraint firstItem="5lL-81-HUP" firstAttribute="top" secondItem="1ZS-Ae-kWP" secondAttribute="bottom" constant="10" id="a8e-ry-4wj"/>
-                                    <constraint firstItem="E2I-U3-rxw" firstAttribute="leading" secondItem="rxs-Ek-l27" secondAttribute="leading" id="dqT-RK-2cS"/>
+                                    <constraint firstAttribute="bottom" secondItem="rxs-Ek-l27" secondAttribute="bottom" constant="10" id="cWo-i0-QlX"/>
                                     <constraint firstItem="1ZS-Ae-kWP" firstAttribute="leading" secondItem="rxs-Ek-l27" secondAttribute="leading" id="gHq-hG-iOn"/>
-                                    <constraint firstAttribute="bottom" secondItem="E2I-U3-rxw" secondAttribute="bottom" constant="20" id="hQa-cs-5nA"/>
                                     <constraint firstItem="W75-P4-g5q" firstAttribute="leading" secondItem="1ZS-Ae-kWP" secondAttribute="leading" id="kNO-Mq-OwB"/>
                                     <constraint firstItem="5lL-81-HUP" firstAttribute="leading" secondItem="BAs-zd-q2C" secondAttribute="leading" id="lTc-8Q-s2I"/>
                                     <constraint firstItem="W75-P4-g5q" firstAttribute="top" secondItem="Nbb-LK-uKT" secondAttribute="top" constant="20" id="laS-ex-JEe"/>
@@ -183,7 +167,6 @@
                         <outlet property="fixedButton2" destination="9LO-6j-sjQ" id="6sc-in-rOJ"/>
                         <outlet property="fixedDescription" destination="rxs-Ek-l27" id="i2V-D9-tXC"/>
                         <outlet property="viewTitle" destination="W75-P4-g5q" id="vhK-xF-0Iw"/>
-                        <outlet property="wcagButton" destination="E2I-U3-rxw" id="k5W-vB-ZC7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKZ-7I-yi3" userLabel="First Responder" sceneMemberID="firstResponder"/>

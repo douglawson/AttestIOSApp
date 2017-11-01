@@ -17,7 +17,6 @@ class DefaultTouchTargetSize: UIViewController {
     @IBOutlet weak var fixedView: UIView!
     @IBOutlet weak var fixedSwitchView: UIView!
     @IBOutlet weak var fixedSwitchDescription: UILabel!
-    @IBOutlet weak var wcagButton: UIButton!
     
     //TODO: Change URL
     @IBAction func openUrl(_ sender: Any) {
@@ -59,7 +58,6 @@ class DefaultTouchTargetSize: UIViewController {
         brokenSwitch.onTintColor = (DU_BLUE)
         fixedSwitch.tintColor = (FIXED_COLOR)
         fixedSwitch.onTintColor = (FIXED_COLOR)
-        wcagButton.tintColor = (DU_BLUE)
         
         // Set switch to "off"
         fixedSwitch.isOn = false
@@ -81,7 +79,6 @@ class DefaultTouchTargetSize: UIViewController {
             brokenDescription.adjustsFontForContentSizeCategory = true
             switchLabel.adjustsFontForContentSizeCategory = true
             fixedSwitchDescription.adjustsFontForContentSizeCategory = true
-            wcagButton.titleLabel!.adjustsFontForContentSizeCategory = true
         }
     }
 

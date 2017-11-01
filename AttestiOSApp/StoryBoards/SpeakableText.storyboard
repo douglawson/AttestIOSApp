@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -87,31 +87,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIq-Wh-Ve4">
-                                        <rect key="frame" x="20" y="488.5" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="AQ8-Gx-vhG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="zNU-HI-AfK" eventType="touchUpInside" id="i6p-Xo-v29"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="3qy-w5-jcw" firstAttribute="trailing" secondItem="ojL-9B-2r5" secondAttribute="trailing" id="1Rm-BT-1iD"/>
                                     <constraint firstItem="xJh-Hp-AdV" firstAttribute="top" secondItem="ojL-9B-2r5" secondAttribute="bottom" constant="10" id="2iJ-rs-itb"/>
                                     <constraint firstItem="1gP-Db-9J0" firstAttribute="top" secondItem="lun-59-Un2" secondAttribute="top" constant="20" id="8kj-an-hfh"/>
-                                    <constraint firstItem="xJh-Hp-AdV" firstAttribute="leading" secondItem="nIq-Wh-Ve4" secondAttribute="leading" id="LRi-FG-QoS"/>
                                     <constraint firstItem="1gP-Db-9J0" firstAttribute="leading" secondItem="lun-59-Un2" secondAttribute="leading" constant="20" id="ZLl-l5-zI1"/>
                                     <constraint firstItem="1gP-Db-9J0" firstAttribute="trailing" secondItem="Bei-Us-fJg" secondAttribute="trailing" id="ZkF-KT-wH5"/>
                                     <constraint firstItem="Bei-Us-fJg" firstAttribute="leading" secondItem="xJh-Hp-AdV" secondAttribute="leading" id="doC-3V-NF4"/>
                                     <constraint firstItem="Bei-Us-fJg" firstAttribute="top" secondItem="3qy-w5-jcw" secondAttribute="bottom" constant="10" id="eSA-lx-1wG"/>
-                                    <constraint firstItem="nIq-Wh-Ve4" firstAttribute="top" secondItem="xJh-Hp-AdV" secondAttribute="bottom" constant="10" id="gGo-r2-Eix"/>
                                     <constraint firstItem="Bei-Us-fJg" firstAttribute="trailing" secondItem="xJh-Hp-AdV" secondAttribute="trailing" id="gUE-qU-7sc"/>
                                     <constraint firstItem="ojL-9B-2r5" firstAttribute="top" secondItem="Bei-Us-fJg" secondAttribute="bottom" constant="10" id="jgw-Kl-faA"/>
                                     <constraint firstAttribute="trailing" secondItem="3qy-w5-jcw" secondAttribute="trailing" constant="30" id="n3k-iJ-Y8m"/>
@@ -119,8 +103,8 @@
                                     <constraint firstItem="3qy-w5-jcw" firstAttribute="top" secondItem="1gP-Db-9J0" secondAttribute="bottom" constant="10" id="pix-Jc-7fw"/>
                                     <constraint firstAttribute="trailing" secondItem="1gP-Db-9J0" secondAttribute="trailing" constant="20" id="r6e-1M-Jmw"/>
                                     <constraint firstItem="3qy-w5-jcw" firstAttribute="leading" secondItem="ojL-9B-2r5" secondAttribute="leading" id="uV6-Oo-ISM"/>
-                                    <constraint firstAttribute="bottom" secondItem="nIq-Wh-Ve4" secondAttribute="bottom" constant="20" id="viH-ha-teb"/>
                                     <constraint firstItem="1gP-Db-9J0" firstAttribute="leading" secondItem="Bei-Us-fJg" secondAttribute="leading" id="wDb-Tc-WnO"/>
+                                    <constraint firstAttribute="bottom" secondItem="xJh-Hp-AdV" secondAttribute="bottom" constant="10" id="zqk-1o-dtb"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -137,7 +121,6 @@
                         <outlet property="brokenDescription" destination="Bei-Us-fJg" id="nFU-xO-WU6"/>
                         <outlet property="fixedDescription" destination="xJh-Hp-AdV" id="Eju-SK-KfU"/>
                         <outlet property="viewTitle" destination="1gP-Db-9J0" id="vn1-69-T4x"/>
-                        <outlet property="wcagButton" destination="nIq-Wh-Ve4" id="a9V-1b-yBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pa3-vH-SuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,20 +193,21 @@
                                             <constraint firstItem="5wH-ba-piT" firstAttribute="leading" secondItem="kym-oK-UO9" secondAttribute="leading" constant="10" id="c7y-UX-3Kd"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;DESCRIPTION&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-RU-9LM">
-                                        <rect key="frame" x="20" y="153" width="336" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-RU-9LM">
+                                        <rect key="frame" x="20" y="153" width="336" height="86.5"/>
+                                        <string key="text">The button to the right links to Google.  Notice how it does not have an accessibility label.  No information will be given to VoiceOver users regarding this element.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-oa-V4Z" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="29.5" y="183.5" width="316" height="92"/>
+                                        <rect key="frame" x="29.5" y="249.5" width="316" height="92"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-zG-Eir">
                                                 <rect key="frame" x="10" y="10" width="296" height="72"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Link" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-Ih-gm1">
-                                                        <rect key="frame" x="10" y="25.5" width="91" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-Ih-gm1">
+                                                        <rect key="frame" x="10" y="25.5" width="55" height="20.5"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -269,22 +253,9 @@
                                             <constraint firstAttribute="bottom" secondItem="IRj-zG-Eir" secondAttribute="bottom" constant="10" id="yu8-td-gZM"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ln-aH-Gcs">
-                                        <rect key="frame" x="20" y="316" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="zkR-eF-a9W"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="Tkg-JR-M8T" eventType="touchUpInside" id="C9g-Vj-xhz"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;DESCRIPTION&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0O-Kl-VCj">
-                                        <rect key="frame" x="20" y="285.5" width="336" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0O-Kl-VCj">
+                                        <rect key="frame" x="20" y="352" width="336" height="86.5"/>
+                                        <string key="text">Here, the label and the button is grouped and accessible by VoiceOver.  When tabbed over, VoiceOver will announce "Google, Link."</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -297,7 +268,6 @@
                                     <constraint firstItem="cTM-mG-Tab" firstAttribute="leading" secondItem="m6D-zL-sDG" secondAttribute="leading" constant="20" id="Ckq-4m-dRW"/>
                                     <constraint firstAttribute="trailing" secondItem="kym-oK-UO9" secondAttribute="trailing" constant="30" id="DQK-xw-TWU"/>
                                     <constraint firstItem="Ghb-RU-9LM" firstAttribute="leading" secondItem="v0O-Kl-VCj" secondAttribute="leading" id="HSs-Bs-mk7"/>
-                                    <constraint firstItem="v0O-Kl-VCj" firstAttribute="leading" secondItem="9ln-aH-Gcs" secondAttribute="leading" id="K62-Ag-0SI"/>
                                     <constraint firstAttribute="trailing" secondItem="cTM-mG-Tab" secondAttribute="trailing" constant="20" id="NM2-lG-tgd"/>
                                     <constraint firstItem="kym-oK-UO9" firstAttribute="trailing" secondItem="cV2-oa-V4Z" secondAttribute="trailing" id="RG2-gl-3by"/>
                                     <constraint firstItem="cV2-oa-V4Z" firstAttribute="top" secondItem="Ghb-RU-9LM" secondAttribute="bottom" constant="10" id="TEg-5F-Lqt"/>
@@ -305,10 +275,9 @@
                                     <constraint firstItem="v0O-Kl-VCj" firstAttribute="top" secondItem="cV2-oa-V4Z" secondAttribute="bottom" constant="10" id="Wab-Ar-1jC"/>
                                     <constraint firstItem="Ghb-RU-9LM" firstAttribute="top" secondItem="kym-oK-UO9" secondAttribute="bottom" constant="10" id="XGX-5a-GUb"/>
                                     <constraint firstItem="kym-oK-UO9" firstAttribute="top" secondItem="cTM-mG-Tab" secondAttribute="bottom" constant="10" id="bpD-3E-WMO"/>
-                                    <constraint firstAttribute="bottom" secondItem="9ln-aH-Gcs" secondAttribute="bottom" constant="20" id="gNy-49-eNV"/>
                                     <constraint firstItem="cTM-mG-Tab" firstAttribute="top" secondItem="m6D-zL-sDG" secondAttribute="top" constant="20" id="ijm-yV-Ckh"/>
                                     <constraint firstItem="kym-oK-UO9" firstAttribute="leading" secondItem="m6D-zL-sDG" secondAttribute="leading" constant="30" id="k5B-DA-zQs"/>
-                                    <constraint firstItem="9ln-aH-Gcs" firstAttribute="top" secondItem="v0O-Kl-VCj" secondAttribute="bottom" constant="10" id="x5H-HP-krG"/>
+                                    <constraint firstAttribute="bottom" secondItem="v0O-Kl-VCj" secondAttribute="bottom" constant="10" id="wIv-K6-2WI"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -331,12 +300,11 @@
                         <outlet property="fixedDescription" destination="v0O-Kl-VCj" id="cFu-GI-O7B"/>
                         <outlet property="fixedLabel" destination="M6W-Ih-gm1" id="esp-w6-9UI"/>
                         <outlet property="viewTitle" destination="cTM-mG-Tab" id="vtc-7S-r4c"/>
-                        <outlet property="wcagButton" destination="9ln-aH-Gcs" id="4Tk-H7-0Cm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFe-9p-LLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="132"/>
+            <point key="canvasLocation" x="189.59999999999999" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>

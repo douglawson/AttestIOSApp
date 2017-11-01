@@ -40,8 +40,6 @@ class ActiveControl: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var fixedDescription: UILabel!
     @IBOutlet weak var fixedButtonView: UIView!
     
-    @IBOutlet weak var wcagButton: UIButton!
-    
     //TODO: Change URL
     @IBAction func openUrl(_ sender: Any) {
         let url = URL.init(string: "URL GOES HERE")
@@ -75,7 +73,6 @@ class ActiveControl: UIViewController, UIScrollViewDelegate {
         // Colors
         brokenButton.tintColor = (BROKEN_COLOR)
         fixedButton.tintColor = (FIXED_COLOR)
-        wcagButton.tintColor = (DU_BLUE)
         
         // Dynamic Type
         if #available(iOS 10.0, *) {
@@ -84,7 +81,6 @@ class ActiveControl: UIViewController, UIScrollViewDelegate {
             brokenDescription.adjustsFontForContentSizeCategory = true
             fixedLabel.adjustsFontForContentSizeCategory = true
             fixedDescription.adjustsFontForContentSizeCategory = true
-            wcagButton.titleLabel!.adjustsFontForContentSizeCategory = true
         }
     }
     

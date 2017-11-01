@@ -16,7 +16,6 @@ class ButtonsNestedInA11yElement: UIViewController {
     @IBOutlet weak var fixedButton1: UIButton!
     @IBOutlet weak var fixedButton2: UIButton!
     @IBOutlet weak var fixedDescription: UILabel!
-    @IBOutlet weak var wcagButton: UIButton!
     
     //TODO: Change URL
     @IBAction func openUrl(_ sender: Any) {
@@ -36,7 +35,6 @@ class ButtonsNestedInA11yElement: UIViewController {
         brokenButton2.tintColor = (DU_BLUE)
         fixedButton1.tintColor = (DU_BLUE)
         fixedButton2.tintColor = (DU_BLUE)
-        wcagButton.tintColor = (DU_BLUE)
         
         if #available(iOS 10.0, *) {
             viewTitle.adjustsFontForContentSizeCategory = true
@@ -46,7 +44,6 @@ class ButtonsNestedInA11yElement: UIViewController {
             fixedButton1.titleLabel!.adjustsFontForContentSizeCategory = true
             fixedButton2.titleLabel!.adjustsFontForContentSizeCategory = true
             fixedDescription.adjustsFontForContentSizeCategory = true
-            wcagButton.titleLabel!.adjustsFontForContentSizeCategory = true
         }
     }
 }
