@@ -26,3 +26,5 @@ Coming soon!
 [Starting the Attest Server](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSApp/AppDelegate.swift)
 
 [Syncing Results with the Attest Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
+
+All Rights Reserved
