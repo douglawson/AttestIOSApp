@@ -10,6 +10,7 @@
 		0F3B97771FA033070050441F /* AccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B97761FA033070050441F /* AccessibilityTests.swift */; };
 		0F4F119A1FA265E6005D6D4B /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
 		0F4F119B1FA265E6005D6D4B /* Attest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */; };
 		0F5E4FAE1F9E84EB0054CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF081F9E6F120059DB83 /* Main.storyboard */; };
 		0F5E4FAF1F9E85290054CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */; };
 		0F5E4FB01F9E85290054CB04 /* AccessibilityHint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */; };
@@ -24,9 +25,6 @@
 		0F5E4FB91F9E85290054CB04 /* VoiceOverNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */; };
 		0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */; };
 		0F5E4FBC1F9E857D0054CB04 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDED71F9E6ED90059DB83 /* Stepper.swift */; };
-		0F5E4FC81F9E857D0054CB04 /* AutoAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEF1F9E6EDC0059DB83 /* AutoAdjust.swift */; };
-		0F5E4FC91F9E857D0054CB04 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEF11F9E6EDC0059DB83 /* FontType.swift */; };
-		0F5E4FCA1F9E857D0054CB04 /* NoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEF21F9E6EDC0059DB83 /* NoScrollView.swift */; };
 		0F5E4FCB1F9E857D0054CB04 /* NotInFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */; };
 		0F5E4FCC1F9E857D0054CB04 /* ButtonsNestedInA11yElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */; };
 		0F5E4FCD1F9E857D0054CB04 /* ActiveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */; };
@@ -39,10 +37,9 @@
 		0FCBDEAD1F9E6C350059DB83 /* AttestiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEAC1F9E6C350059DB83 /* AttestiOSAppUITests.swift */; };
 		0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */; };
 		0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
-		0FCBDECC1F9E6EA80059DB83 /* DUStoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC01F9E6EA70059DB83 /* DUStoryTableViewController.swift */; };
-		0FCBDECF1F9E6EA80059DB83 /* DUSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC61F9E6EA80059DB83 /* DUSplitViewController.swift */; };
+		0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */; };
+		0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */; };
 		0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */; };
-		0FCBDF071F9E6EDD0059DB83 /* DUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEF31F9E6EDC0059DB83 /* DUViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +75,8 @@
 
 /* Begin PBXFileReference section */
 		0F3B97761FA033070050441F /* AccessibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTests.swift; sourceTree = "<group>"; };
-		0F4F11921FA26576005D6D4B /* Attest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Attest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4F11991FA265E6005D6D4B /* Attest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Attest.framework; path = Framework/Release/Attest.framework; sourceTree = "<group>"; };
+		0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAdjustingView.swift; sourceTree = "<group>"; };
 		0F5E4FD31F9E86D20054CB04 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttestiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDE981F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,8 +87,8 @@
 		0FCBDEAE1F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0FCBDEC01F9E6EA70059DB83 /* DUStoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUStoryTableViewController.swift; sourceTree = "<group>"; };
-		0FCBDEC61F9E6EA80059DB83 /* DUSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSplitViewController.swift; sourceTree = "<group>"; };
+		0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityHint.storyboard; sourceTree = "<group>"; };
 		0FCBDED71F9E6ED90059DB83 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorContrast.storyboard; sourceTree = "<group>"; };
@@ -104,11 +101,7 @@
 		0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yStepper.swift; sourceTree = "<group>"; };
 		0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsNestedInA11yElement.swift; sourceTree = "<group>"; };
 		0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NestedA11yElements.storyboard; sourceTree = "<group>"; };
-		0FCBDEEF1F9E6EDC0059DB83 /* AutoAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoAdjust.swift; sourceTree = "<group>"; };
 		0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicType.storyboard; sourceTree = "<group>"; };
-		0FCBDEF11F9E6EDC0059DB83 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
-		0FCBDEF21F9E6EDC0059DB83 /* NoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoScrollView.swift; sourceTree = "<group>"; };
-		0FCBDEF31F9E6EDC0059DB83 /* DUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUViewController.swift; sourceTree = "<group>"; };
 		0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Overlap.storyboard; sourceTree = "<group>"; };
 		0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveControl.swift; sourceTree = "<group>"; };
 		0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformativeControl.swift; sourceTree = "<group>"; };
@@ -147,12 +140,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F4F11901FA26576005D6D4B /* Frameworks */ = {
+		0FB881B31FA8E2F00024E479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0F4F11921FA26576005D6D4B /* Attest.framework */,
+				0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */,
+				0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */,
+				0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */,
 			);
-			name = Frameworks;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FB881B41FA8E48B0024E479 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */,
+				0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */,
+				0FCBDF031F9E6EDD0059DB83 /* DefaultTouchTargetSize.swift */,
+				0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */,
+				0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */,
+				0FCBDF001F9E6EDD0059DB83 /* Other1.swift */,
+				0FCBDED71F9E6ED90059DB83 /* Stepper.swift */,
+				0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */,
+				0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0FB881B51FA8E4F70024E479 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */,
+				0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */,
+				0FCBDF081F9E6F120059DB83 /* Main.storyboard */,
+				0FCBDEE01F9E6EDA0059DB83 /* ConflictingTraits.storyboard */,
+				0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */,
+				0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */,
+				0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */,
+				0FCBDEE61F9E6EDA0059DB83 /* InHighlight.storyboard */,
+				0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */,
+				0FCBDF011F9E6EDD0059DB83 /* SpeakableText.storyboard */,
+				0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */,
+				0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		0FCBDE801F9E6C350059DB83 = {
@@ -160,10 +190,10 @@
 			children = (
 				0F4F11991FA265E6005D6D4B /* Attest.framework */,
 				0FCBDE8B1F9E6C350059DB83 /* AttestiOSApp */,
+				0F5E4FD31F9E86D20054CB04 /* Media.xcassets */,
 				0FCBDEA01F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEAB1F9E6C350059DB83 /* AttestiOSAppUITests */,
 				0FCBDE8A1F9E6C350059DB83 /* Products */,
-				0F4F11901FA26576005D6D4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,27 +210,14 @@
 		0FCBDE8B1F9E6C350059DB83 /* AttestiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */,
-				0FCBDF081F9E6F120059DB83 /* Main.storyboard */,
-				0FCBDEE01F9E6EDA0059DB83 /* ConflictingTraits.storyboard */,
-				0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */,
-				0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */,
-				0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */,
-				0FCBDEF31F9E6EDC0059DB83 /* DUViewController.swift */,
-				0FCBDEE91F9E6EDB0059DB83 /* A11yControls */,
-				0FCBDED41F9E6ED90059DB83 /* Accessibility Hint */,
-				0FCBDEEE1F9E6EDC0059DB83 /* Dynamic Type */,
-				0FCBDEE51F9E6EDA0059DB83 /* In Highlight */,
-				0FCBDEEB1F9E6EDB0059DB83 /* Nested A11y Elements */,
-				0FCBDEFD1F9E6EDD0059DB83 /* Speakable Text */,
-				0FCBDF021F9E6EDD0059DB83 /* Touch Target Size */,
-				0FCBDEE21F9E6EDA0059DB83 /* VoiceOverNavigation */,
+				0FCBDE981F9E6C350059DB83 /* Info.plist */,
 				0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */,
 				0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */,
-				0FCBDEC61F9E6EA80059DB83 /* DUSplitViewController.swift */,
-				0FCBDEC01F9E6EA70059DB83 /* DUStoryTableViewController.swift */,
-				0FCBDE981F9E6C350059DB83 /* Info.plist */,
-				0F5E4FD31F9E86D20054CB04 /* Media.xcassets */,
+				0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */,
+				0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */,
+				0FB881B51FA8E4F70024E479 /* StoryBoards */,
+				0FB881B41FA8E48B0024E479 /* ViewControllers */,
+				0FB881B31FA8E2F00024E479 /* Views */,
 			);
 			path = AttestiOSApp;
 			sourceTree = "<group>";
@@ -221,82 +238,6 @@
 				0FCBDEAE1F9E6C350059DB83 /* Info.plist */,
 			);
 			path = AttestiOSAppUITests;
-			sourceTree = "<group>";
-		};
-		0FCBDED41F9E6ED90059DB83 /* Accessibility Hint */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */,
-				0FCBDED71F9E6ED90059DB83 /* Stepper.swift */,
-			);
-			path = "Accessibility Hint";
-			sourceTree = "<group>";
-		};
-		0FCBDEE21F9E6EDA0059DB83 /* VoiceOverNavigation */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */,
-				0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */,
-			);
-			path = VoiceOverNavigation;
-			sourceTree = "<group>";
-		};
-		0FCBDEE51F9E6EDA0059DB83 /* In Highlight */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEE61F9E6EDA0059DB83 /* InHighlight.storyboard */,
-				0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */,
-			);
-			path = "In Highlight";
-			sourceTree = "<group>";
-		};
-		0FCBDEE91F9E6EDB0059DB83 /* A11yControls */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */,
-			);
-			path = A11yControls;
-			sourceTree = "<group>";
-		};
-		0FCBDEEB1F9E6EDB0059DB83 /* Nested A11y Elements */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */,
-				0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */,
-			);
-			path = "Nested A11y Elements";
-			sourceTree = "<group>";
-		};
-		0FCBDEEE1F9E6EDC0059DB83 /* Dynamic Type */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEEF1F9E6EDC0059DB83 /* AutoAdjust.swift */,
-				0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */,
-				0FCBDEF11F9E6EDC0059DB83 /* FontType.swift */,
-				0FCBDEF21F9E6EDC0059DB83 /* NoScrollView.swift */,
-			);
-			path = "Dynamic Type";
-			sourceTree = "<group>";
-		};
-		0FCBDEFD1F9E6EDD0059DB83 /* Speakable Text */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */,
-				0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */,
-				0FCBDF001F9E6EDD0059DB83 /* Other1.swift */,
-				0FCBDF011F9E6EDD0059DB83 /* SpeakableText.storyboard */,
-			);
-			path = "Speakable Text";
-			sourceTree = "<group>";
-		};
-		0FCBDF021F9E6EDD0059DB83 /* Touch Target Size */ = {
-			isa = PBXGroup;
-			children = (
-				0FCBDF031F9E6EDD0059DB83 /* DefaultTouchTargetSize.swift */,
-				0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */,
-				0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */,
-			);
-			path = "Touch Target Size";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,21 +404,18 @@
 			files = (
 				0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */,
 				0F5E4FBC1F9E857D0054CB04 /* Stepper.swift in Sources */,
-				0F5E4FC81F9E857D0054CB04 /* AutoAdjust.swift in Sources */,
-				0F5E4FC91F9E857D0054CB04 /* FontType.swift in Sources */,
-				0F5E4FCA1F9E857D0054CB04 /* NoScrollView.swift in Sources */,
 				0F5E4FCB1F9E857D0054CB04 /* NotInFrame.swift in Sources */,
 				0F5E4FCC1F9E857D0054CB04 /* ButtonsNestedInA11yElement.swift in Sources */,
 				0F5E4FCD1F9E857D0054CB04 /* ActiveControl.swift in Sources */,
 				0F5E4FCE1F9E857D0054CB04 /* InformativeControl.swift in Sources */,
 				0F5E4FCF1F9E857D0054CB04 /* Other1.swift in Sources */,
 				0F5E4FD01F9E857D0054CB04 /* DefaultTouchTargetSize.swift in Sources */,
+				0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */,
 				0F5E4FD11F9E857D0054CB04 /* TouchTargetSizeScreenDependent.swift in Sources */,
 				0F5E4FD21F9E857D0054CB04 /* VoiceOverNavigation.swift in Sources */,
 				0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */,
-				0FCBDECF1F9E6EA80059DB83 /* DUSplitViewController.swift in Sources */,
-				0FCBDF071F9E6EDD0059DB83 /* DUViewController.swift in Sources */,
-				0FCBDECC1F9E6EA80059DB83 /* DUStoryTableViewController.swift in Sources */,
+				0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */,
+				0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */,
 				0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */,
 				0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */,
 			);
