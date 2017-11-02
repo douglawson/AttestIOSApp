@@ -27,5 +27,12 @@ Coming soon!
 
 [Syncing Results with the Attest Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
 
+## Known Issues
+When testing on the simulator, if you don't attach the Accessibility Inspector to the simulated device, the AT layer may not initialize. Our rules are designed in such a way, where this won't cause false positives, but it will cause fewer reports than expected. 
+
+XCode -> Open Developer Tool -> Accessibility Inspector
+
+Attach it to your simulator.
+
 ## Disclaimer
 All Rights Reserved
