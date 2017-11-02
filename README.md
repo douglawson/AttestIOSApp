@@ -29,7 +29,7 @@ Coming soon!
 
 ## Known Issues
 
-# Accessibility Inspector On
+### Accessibility Inspector On
 When testing on the simulator, if you don't attach the Accessibility Inspector to the simulated device, the AT layer may not initialize. Our rules are designed in such a way, where this won't cause false positives, but it will cause fewer reports than expected. 
 
 XCode -> Open Developer Tool -> Accessibility Inspector
