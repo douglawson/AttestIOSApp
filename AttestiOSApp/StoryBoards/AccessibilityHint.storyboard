@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -244,20 +244,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riq-vS-Bnq">
-                                        <rect key="frame" x="20" y="468" width="162" height="62"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="k9K-pD-bWm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <state key="normal" title="WCAG Guideline Link"/>
-                                        <connections>
-                                            <action selector="openUrl:" destination="WGR-GF-SJO" eventType="touchUpInside" id="wag-l2-dZZ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Ehg-3n-lru" firstAttribute="leading" secondItem="HeT-A7-RLN" secondAttribute="leading" id="8Ve-R5-cFK"/>
@@ -265,10 +251,9 @@
                                     <constraint firstItem="HeT-A7-RLN" firstAttribute="trailing" secondItem="IgK-I2-7sL" secondAttribute="trailing" id="BW1-Bf-9VQ"/>
                                     <constraint firstAttribute="trailing" secondItem="6ZA-vV-A4p" secondAttribute="trailing" constant="30" id="D4Z-8W-aSb"/>
                                     <constraint firstItem="IgK-I2-7sL" firstAttribute="top" secondItem="wpv-Br-rJ3" secondAttribute="bottom" constant="10" id="Fem-a5-zQz"/>
-                                    <constraint firstItem="riq-vS-Bnq" firstAttribute="leading" secondItem="IgK-I2-7sL" secondAttribute="leading" id="K1p-5b-wjd"/>
                                     <constraint firstItem="Ehg-3n-lru" firstAttribute="trailing" secondItem="HeT-A7-RLN" secondAttribute="trailing" id="KfV-Fe-VLl"/>
+                                    <constraint firstAttribute="bottom" secondItem="IgK-I2-7sL" secondAttribute="bottom" constant="10" id="Klq-XI-P87"/>
                                     <constraint firstItem="Ehg-3n-lru" firstAttribute="leading" secondItem="zLt-di-tTr" secondAttribute="leading" constant="20" id="QH1-oM-xnX"/>
-                                    <constraint firstAttribute="bottom" secondItem="riq-vS-Bnq" secondAttribute="bottom" constant="20" id="af0-GM-cyV"/>
                                     <constraint firstItem="6ZA-vV-A4p" firstAttribute="top" secondItem="Ehg-3n-lru" secondAttribute="bottom" constant="10" id="bVf-Ox-eFv"/>
                                     <constraint firstAttribute="trailing" secondItem="Ehg-3n-lru" secondAttribute="trailing" constant="20" id="dFR-CZ-rdB"/>
                                     <constraint firstItem="wpv-Br-rJ3" firstAttribute="top" secondItem="HeT-A7-RLN" secondAttribute="bottom" constant="10" id="ezQ-nQ-6Bw"/>
@@ -277,7 +262,6 @@
                                     <constraint firstItem="HeT-A7-RLN" firstAttribute="leading" secondItem="IgK-I2-7sL" secondAttribute="leading" id="mQI-qb-HcF"/>
                                     <constraint firstItem="6ZA-vV-A4p" firstAttribute="leading" secondItem="wpv-Br-rJ3" secondAttribute="leading" id="puP-m4-mBy"/>
                                     <constraint firstItem="HeT-A7-RLN" firstAttribute="top" secondItem="6ZA-vV-A4p" secondAttribute="bottom" constant="10" id="xQc-62-Re2"/>
-                                    <constraint firstItem="riq-vS-Bnq" firstAttribute="top" secondItem="IgK-I2-7sL" secondAttribute="bottom" constant="10" id="yoC-qb-bJV"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -301,7 +285,6 @@
                         <outlet property="fixedStepper" destination="SnW-Yl-eUf" id="X5H-aM-KL0"/>
                         <outlet property="fixedTitle" destination="aZ1-fb-n9r" id="BRh-vs-6mg"/>
                         <outlet property="viewTitle" destination="Ehg-3n-lru" id="Plb-V6-mhQ"/>
-                        <outlet property="wcagButton" destination="riq-vS-Bnq" id="x7Z-FV-SNO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlx-kl-eEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
