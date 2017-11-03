@@ -11,10 +11,10 @@
 	<key>CFBundlePackageType</key>
 	<string>dSYM</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0_rc1-81-g548bb50-SNAPSHOT</string>
+	<string>1.0.0_rc1-82-g1f6fb60-SNAPSHOT</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>330</string>
+	<string>331</string>
 </dict>
 </plist>

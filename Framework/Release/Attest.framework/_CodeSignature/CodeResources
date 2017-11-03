@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3TEua1w+tLq6tiGIphhBkFydoaE=
+		0nWaI9hGYEkfyqF1qAtaoqo+Fx8=
 		</data>
 		<key>Modules/Attest.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Attest.swiftmodule/i386.swiftmodule</key>
 		<data>
-		BfP/pzF5fUzcpYV8H5KsIbgswGY=
+		X1QvL1rvikxrG0lf+GGPoJQDWns=
 		</data>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		KIP2RQqPqtyvaDDcfty5SnDTZ7c=
+		DrQ0L5gF90E6QUhA7ZSOzQW75zI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,11 +226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BfP/pzF5fUzcpYV8H5KsIbgswGY=
+			X1QvL1rvikxrG0lf+GGPoJQDWns=
 			</data>
 			<key>hash2</key>
 			<data>
-			gJCzi1xHMp9Qwmn11CrPCHfS5ffoadaqtgUgsA5hTPY=
+			pvsPstVTagmKg3+PwO0+HFam4+gG/OvbUI87qepsRYI=
 			</data>
 		</dict>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftdoc</key>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KIP2RQqPqtyvaDDcfty5SnDTZ7c=
+			DrQ0L5gF90E6QUhA7ZSOzQW75zI=
 			</data>
 			<key>hash2</key>
 			<data>
-			V0rqBRnT/lYxqw/gGUXrdwfCBNqZBRLIhvJKnF/J3SE=
+			4vYE1t/LVBJhLc6Wm5WJDDHKolapgHlmONsG/gD4Gh0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
