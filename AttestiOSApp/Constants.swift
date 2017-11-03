@@ -8,24 +8,21 @@
 
 import UIKit
 public enum Demos: Int {
-    
-    case ColorContrast_ColorContrast
+    case SpeakableText_ActiveControl
     case ColorContrast_BlendedBackground
     case ColorContrast_BlendedText
-    case ColorContrast_LargeText
+    case NestedA11yElements_ButtonsNestedInA11yElement
+    case ColorContrast_ColorContrast
     case ConflictingTraits_ConflictingTraitsOnButton
+    case TouchTargetSize_DefaultTouchTargetSize
+    case DynamicType_FontType
+    case SpeakableText_InformativeControl
+    case ColorContrast_LargeText
+    case InHighlight_NotInFrame
     case Overlap_OverlappingButton
     case Overlap_OverlappingLabel
-    case DynamicType_FontType
-    //case AccessibilityHint_SegmentedControl
     case AccessibilityHint_Stepper
-    //case AccessibilityHint_StepperBestPractice
-    case InHighlight_NotInFrame
-    case NestedA11yElements_ButtonsNestedInA11yElement
-    case SpeakableText_ActiveControl
-    case SpeakableText_InformativeControl
-    case TouchTargetSize_DefaultTouchTargetSize
-    
+
     public func makeViewController() -> UIViewController {
         return UIStoryboard(name: self.storyBoardName(), bundle: nil).instantiateViewController(withIdentifier: self.viewControllerName())
     }
