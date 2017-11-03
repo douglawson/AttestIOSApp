@@ -4,6 +4,7 @@ of best practices on how to use the Attest for iOS Automated Accessibility Scann
 itself is a very simple series of ViewControllers that aim to demo one aspect of accessibility api usage.
 Within each example is a demo of how to misuse iOS APIs and how to use them properly.
 
+[![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
 ## Building with Attest for iOS
 
 Attest for iOS is a Swift framework. Most of the features are also designed to work in Objective C. Link to it like you would any other framework.
