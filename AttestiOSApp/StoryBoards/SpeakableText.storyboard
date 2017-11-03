@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -170,6 +170,7 @@
                                                             <constraint firstAttribute="height" constant="62" id="Pha-xU-11q"/>
                                                             <constraint firstAttribute="width" secondItem="Sc1-sb-DsL" secondAttribute="height" multiplier="1:1" id="e6h-Ld-igi"/>
                                                         </constraints>
+                                                        <state key="normal" image="AboutIcon"/>
                                                         <connections>
                                                             <action selector="openDU:" destination="Tkg-JR-M8T" eventType="touchUpInside" id="2rz-jO-C4g"/>
                                                         </connections>
@@ -225,6 +226,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="k0a-yy-Vzk" secondAttribute="height" multiplier="1:1" id="UBX-tK-grP"/>
                                                         </constraints>
+                                                        <state key="normal" image="AboutIcon"/>
                                                         <connections>
                                                             <action selector="openDU:" destination="Tkg-JR-M8T" eventType="touchUpInside" id="YYV-5z-8jx"/>
                                                         </connections>
@@ -308,6 +310,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AboutIcon" width="256" height="256"/>
         <image name="DequeLogo" width="360" height="122"/>
     </resources>
 </document>
