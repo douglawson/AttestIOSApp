@@ -13,7 +13,6 @@ class InformativeControl: UIViewController {
     @IBOutlet weak var viewTitle: UILabel!
     @IBOutlet weak var brokenDescription: UILabel!
     @IBOutlet weak var fixedDescription: UILabel!
-    @IBOutlet weak var wcagButton: UIButton!
     
     //TODO: Change URL
     @IBAction func openUrl(_ sender: Any) {
@@ -28,13 +27,10 @@ class InformativeControl: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        wcagButton.tintColor = DU_BLUE
-                
         if #available(iOS 10.0, *) {
             viewTitle.adjustsFontForContentSizeCategory = true
             brokenDescription.adjustsFontForContentSizeCategory = true
             fixedDescription.adjustsFontForContentSizeCategory = true
-            wcagButton.titleLabel!.adjustsFontForContentSizeCategory = true
         }
     }
 }
