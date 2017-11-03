@@ -75,7 +75,7 @@ class MenuViewController: UITableViewController {
         if indexPath.section == RULES_SECTION_NUM {
             cell = tableView.dequeueReusableCell(withIdentifier: RULES_IDENTIFIER, for: indexPath)
             label = cell.viewWithTag(RULES_TITLE_TAG) as! UILabel
-            label.text = "RULES"
+            label.text = "Attest for iOS"
         } else {
             cell = self.tableView.dequeueReusableCell(withIdentifier: RULES_STORIES_IDENTIFIER, for: indexPath)
 
