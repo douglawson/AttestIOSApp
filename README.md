@@ -37,7 +37,7 @@ XCode -> Open Developer Tool -> Accessibility Inspector
 
 Attach it to your simulator.
 
-# Menu Bar False Positives
+### Menu Bar False Positives
 
 Some rules, in particular color contrast, can report false positives on Menu Bar elements.
 
