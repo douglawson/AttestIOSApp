@@ -6,7 +6,7 @@ Within each example is a demo of how to misuse iOS APIs and how to use them prop
 
 Attest for iOS Libarry 1.0 Branch: [![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
 
-Buitls Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs/AttestIOSApp/tree/master.svg?style=svg&circle-token=43cf7b8bde9c08b12f88f9282983a3837bcd6522)](https://circleci.com/gh/dequelabs/AttestIOSApp/tree/master)
+Build Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs/AttestIOSApp/tree/master.svg?style=shield&circle-token=43cf7b8bde9c08b12f88f9282983a3837bcd6522)](https://circleci.com/gh/dequelabs/AttestIOSApp/tree/master)
 
 ## Building with Attest for iOS
 
