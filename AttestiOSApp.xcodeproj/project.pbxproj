@@ -405,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf Framework\n\nif [ -d \"../AttestIOS.xcodeproj\" ]; then\n    #If the direcotry is there build the framework from Attest IOS project.\n    pushd ..\n    sh ./Scripts/build.sh\nelse\n    #If the directory isn't there fetch the framework from Agora.\n    sh ./Scripts/CurlFramework.sh\nfi\n\n";
+			shellScript = "rm -rf Framework\n\n\n    #If the directory isn't there fetch the framework from Agora.\n    sh ./Scripts/CurlFramework.sh\n\n\n";
 		};
 		0F4249F61FB0C87100B8CCD7 /* Open Accessibility Inspector */ = {
 			isa = PBXShellScriptBuildPhase;
