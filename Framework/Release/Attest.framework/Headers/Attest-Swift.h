@@ -177,8 +177,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 #endif
 
-#import <Attest/Attest.h>
-
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -266,92 +264,10 @@ typedef SWIFT_ENUM(NSInteger, RuleID) {
 
 
 
-@class PSWebSocketServer;
-@class PSWebSocket;
 
 /// This is the class that connects the device running the Attest framework to the Attest Mobile UI Client.
 SWIFT_CLASS("_TtC6Attest15WebsocketServer")
-@interface WebsocketServer : NSObject <PSWebSocketServerDelegate>
-/// Will print “Server did stop” to NSLog for the server specified. Delegate Method.
-/// \param server The server that stopped.
-///
-///
-/// returns:
-/// None.
-- (void)serverDidStop:(PSWebSocketServer * _Null_unspecified)server;
-/// Will print “Server did start” to NSLog for the server specified. Delegate Method.
-/// \param server The server that started.
-///
-///
-/// returns:
-/// None.
-- (void)serverDidStart:(PSWebSocketServer * _Null_unspecified)server;
-/// Will print to NSLog that the server failed with the error specified. Delegate Method.
-/// \param server the server that had an error.
-///
-/// \param error the error that occurred.
-///
-///
-/// returns:
-/// None.
-- (void)server:(PSWebSocketServer * _Null_unspecified)server didFailWithError:(NSError * _Null_unspecified)error;
-/// Will print to NSLog that the server’s webSocket opened. Delegate Method.
-/// \param server The server whose webSocket opened.
-///
-/// \param webSocket the webSocket that opened.
-///
-///
-/// returns:
-/// None.
-- (void)server:(PSWebSocketServer * _Null_unspecified)server webSocketDidOpen:(PSWebSocket * _Null_unspecified)webSocket;
-/// Retrieves data and sends it through the webSocket to be used by the Attest UI Client. Delegate Method.
-/// \param server the server with the webSocket that received the message.
-///
-/// \param webSocket the webSocket that received the message.
-///
-/// \param message the actual message. The message is one of the following:
-/// <ul>
-///   <li>
-///     “DEVICE” - asking server to send information about the device.
-///   </li>
-///   <li>
-///     “ANALYZE” - asking server to call Attest to run the accessibility analysis. Will print to NSLog with the results of the test.
-///   </li>
-///   <li>
-///     “HIGHLIGHT” - asking server to highlight the view in violation.
-///   </li>
-/// </ul>
-///
-///
-/// returns:
-/// None.
-- (void)server:(PSWebSocketServer * _Null_unspecified)server webSocket:(PSWebSocket * _Null_unspecified)webSocket didReceiveMessage:(id _Null_unspecified)message;
-/// Will print to NSLog when the webSocket on a server closes. Delegate Method.
-/// \param server The server with the webSocket that closed.
-///
-/// \param webSocket the webSocket that closed.
-///
-/// \param code Int representing the code that the server released when the webSocket closed.
-///
-/// \param reason String of the reason that the server’s webSocket closed.
-///
-/// \param wasClean Bool representing whether or not the webSocket was closed properly.
-///
-///
-/// returns:
-/// None.
-- (void)server:(PSWebSocketServer * _Null_unspecified)server webSocket:(PSWebSocket * _Null_unspecified)webSocket didCloseWithCode:(NSInteger)code reason:(NSString * _Null_unspecified)reason wasClean:(BOOL)wasClean;
-/// Will print to NSLog when the webSocket on a server fails. Delegate Method.
-/// \param server the server with the webSocket that failed.
-///
-/// \param webSocket the webSocket that failed.
-///
-/// \param error Error, the reason for failing.
-///
-///
-/// returns:
-/// None.
-- (void)server:(PSWebSocketServer * _Null_unspecified)server webSocket:(PSWebSocket * _Null_unspecified)webSocket didFailWithError:(NSError * _Null_unspecified)error;
+@interface WebsocketServer : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

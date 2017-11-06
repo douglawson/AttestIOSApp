@@ -6,71 +6,31 @@
 	<dict>
 		<key>Headers/Attest-Swift.h</key>
 		<data>
-		5cuk4jnkzTmvB5tXCFAtv7jMyXg=
+		U2zWQPboy2/8K+yFTQlZ6IOioiY=
 		</data>
 		<key>Headers/Attest.h</key>
 		<data>
-		6e5mC8Kc5jZwgd3S16e2+pP6yAo=
-		</data>
-		<key>Headers/PSWebSocket.h</key>
-		<data>
-		2jX+vk14chISdYevGfRvOXDZ37E=
-		</data>
-		<key>Headers/PSWebSocketBuffer.h</key>
-		<data>
-		ZZREuPYWczHorqoX+qyuwOzNCuA=
-		</data>
-		<key>Headers/PSWebSocketDeflater.h</key>
-		<data>
-		0gXIkyZ/I2WUuzt9B+y/MsliGd0=
-		</data>
-		<key>Headers/PSWebSocketDriver.h</key>
-		<data>
-		3wvoZpnW3vikCiOtpqoUhRX/fsc=
-		</data>
-		<key>Headers/PSWebSocketInflater.h</key>
-		<data>
-		IMkVHVljN+YfYq9nF3/X56VWEZo=
-		</data>
-		<key>Headers/PSWebSocketInternal.h</key>
-		<data>
-		QGvWc5v7y13omGWg0bwhCKPEvrI=
-		</data>
-		<key>Headers/PSWebSocketNetworkThread.h</key>
-		<data>
-		gUbz6q5MpuWLYcJ6vWJpeEStnGY=
-		</data>
-		<key>Headers/PSWebSocketServer.h</key>
-		<data>
-		dleBUPu8JesrYxqKu+o9+lycnFs=
-		</data>
-		<key>Headers/PSWebSocketTypes.h</key>
-		<data>
-		alz16InRcG0E+gtPf4Kd1mbvoOk=
-		</data>
-		<key>Headers/PSWebSocketUTF8Decoder.h</key>
-		<data>
-		aCWfPBdbD9CJdpRhHJBsVfn9DuM=
+		FHM9XYvr9LV6u6zkjeFGD9vYpV0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0nWaI9hGYEkfyqF1qAtaoqo+Fx8=
+		quN3IlmYpwNe1bdtQBG/LlzhRfo=
 		</data>
 		<key>Modules/Attest.swiftmodule/i386.swiftdoc</key>
 		<data>
-		JUdPiif3su9dlvZWhv9/ev8ehTk=
+		3oNUu5K08VJyFIvYK6US29aB+hY=
 		</data>
 		<key>Modules/Attest.swiftmodule/i386.swiftmodule</key>
 		<data>
-		X1QvL1rvikxrG0lf+GGPoJQDWns=
+		L1A9ZBzy9sGyg+sReSRlyLNk+/c=
 		</data>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		vpOYKGsr4mpn1yiMP4PiqwxLxy0=
+		OJOB8T3N4eqcOt8aOYWQj9ume88=
 		</data>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DrQ0L5gF90E6QUhA7ZSOzQW75zI=
+		LjIsuDN7WM7mYLwd7tlRtfPcpXg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,176 +43,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5cuk4jnkzTmvB5tXCFAtv7jMyXg=
+			U2zWQPboy2/8K+yFTQlZ6IOioiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			hOyF3W+5E+WQTX+8UEPVnKGm7xEY6VxPmkwopzVZUf0=
+			lL45D0CCsWUqUTmptO+z32KAmE82i9eCZG3a5hTDRFE=
 			</data>
 		</dict>
 		<key>Headers/Attest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6e5mC8Kc5jZwgd3S16e2+pP6yAo=
+			FHM9XYvr9LV6u6zkjeFGD9vYpV0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LO77SPBq59Ua6HQVLCRwiXEqGLsgBb6204e21BQoN+k=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocket.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jX+vk14chISdYevGfRvOXDZ37E=
-			</data>
-			<key>hash2</key>
-			<data>
-			U+nXdmip+ezGXhwFRXbu/Ok3iFyK/p2osXEmqHDinLw=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketBuffer.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZZREuPYWczHorqoX+qyuwOzNCuA=
-			</data>
-			<key>hash2</key>
-			<data>
-			nx0K5KlSiFM7uv0cNKhvMMthlRXhikswWebyvkBD5ow=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketDeflater.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0gXIkyZ/I2WUuzt9B+y/MsliGd0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Xk1cqDwCyRK7jSSBVUi3iqd0fFMqv9/7b+0yIWI6aq0=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketDriver.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3wvoZpnW3vikCiOtpqoUhRX/fsc=
-			</data>
-			<key>hash2</key>
-			<data>
-			kPyfYoB5tQDBWQfhdYklT650Xc2jcDVYbJ6ZUViDza0=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketInflater.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IMkVHVljN+YfYq9nF3/X56VWEZo=
-			</data>
-			<key>hash2</key>
-			<data>
-			RrjcRkiW4J472saKIxs+cdIQkX27eOVJfL8cwZZGJls=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketInternal.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QGvWc5v7y13omGWg0bwhCKPEvrI=
-			</data>
-			<key>hash2</key>
-			<data>
-			HjWUhjKREgDUK2H7WtvI+auJuNl00F8ipFgyWmisnmo=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketNetworkThread.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gUbz6q5MpuWLYcJ6vWJpeEStnGY=
-			</data>
-			<key>hash2</key>
-			<data>
-			CZdnPT3cF0jUcUdOY2NLRATskmmQAf9f7Jw8FjmbHeE=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketServer.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dleBUPu8JesrYxqKu+o9+lycnFs=
-			</data>
-			<key>hash2</key>
-			<data>
-			TJ7Q4f9lJ9mqEQJHMIpoexgzb5K1jD2Eqe6AX2PHX+A=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketTypes.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			alz16InRcG0E+gtPf4Kd1mbvoOk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ylu7SDnJTcM3yZc6L7s/k4r2J2PZErA+95NoBjG2c3I=
-			</data>
-		</dict>
-		<key>Headers/PSWebSocketUTF8Decoder.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aCWfPBdbD9CJdpRhHJBsVfn9DuM=
-			</data>
-			<key>hash2</key>
-			<data>
-			GCbdHhcJonHHxFt02lMu1CQ1X6kIaPwRzJDxJHUO9ig=
+			2LTlbJExmxj8sNFGg0I5dSQ6Wn9TJAREOrTntd/44uQ=
 			</data>
 		</dict>
 		<key>Modules/Attest.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JUdPiif3su9dlvZWhv9/ev8ehTk=
+			3oNUu5K08VJyFIvYK6US29aB+hY=
 			</data>
 			<key>hash2</key>
 			<data>
-			T84BCt6E141dQ6C4MduD+JYypZQX5gDmWARnWfOU+QI=
+			keKCc5o+G0l2WRlYFgHSW+UfxdwWxMYEr9meS/N/X6o=
 			</data>
 		</dict>
 		<key>Modules/Attest.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X1QvL1rvikxrG0lf+GGPoJQDWns=
+			L1A9ZBzy9sGyg+sReSRlyLNk+/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			pvsPstVTagmKg3+PwO0+HFam4+gG/OvbUI87qepsRYI=
+			lSE7mQGSaL00pMJQzJB2KtGj9AotqMDYX49BL/S9tbE=
 			</data>
 		</dict>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vpOYKGsr4mpn1yiMP4PiqwxLxy0=
+			OJOB8T3N4eqcOt8aOYWQj9ume88=
 			</data>
 			<key>hash2</key>
 			<data>
-			AQQiz2SeY51yO+nygkAjXBTbN2lKzqSQ7DB7snwof4c=
+			GCXlaPT2I7WSADxZRdBZVHwpT8cExM4kwQyn3Iw53ac=
 			</data>
 		</dict>
 		<key>Modules/Attest.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DrQ0L5gF90E6QUhA7ZSOzQW75zI=
+			LjIsuDN7WM7mYLwd7tlRtfPcpXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4vYE1t/LVBJhLc6Wm5WJDDHKolapgHlmONsG/gD4Gh0=
+			rElt3Q6Y2cjyYUM19jnZ3wla92OlGu6zg5/J+ZP7nxM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

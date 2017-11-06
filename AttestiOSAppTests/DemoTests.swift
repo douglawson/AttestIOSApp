@@ -3,12 +3,29 @@ import Attest
 
 class DemoTests: XCTestCase {
 
-
     /* Some cool hackery. Each of our demos has one accessibility issue in it. Assert that this is so! */
-    func testAll() {
+    func testAllDemos() {
+
+        //Show all details.
+        Rule.Result.withDetails = true
+
+        //Show all passing nodes
+        Rule.Result.withPasses = true
+
+        //For each demo assert that it has one violation on the rule that it demos and is otherwise accessible.
         for demo in Demos.values() {
             Attest.that(viewController: demo.makeViewController()).isAccessible({ (result) in
-                XCTAssertEqual(1, result.violations.count, "\(demo.storyBoardName()) \(demo.viewControllerName()) \(result.description)")
+
+                for ruleResult in result.ruleResults {
+
+                    let message = "\(demo.storyBoardName()) \(demo.viewControllerName()) \(ruleResult.description)"
+
+                    if (ruleResult.rule.ruleId == demo.applicableRule()) {
+                        XCTAssertEqual(1, ruleResult.violations.count, message)
+                    } else {
+                        XCTAssertEqual(0, ruleResult.violations.count, message)
+                    }
+                }
             });
         }
     }

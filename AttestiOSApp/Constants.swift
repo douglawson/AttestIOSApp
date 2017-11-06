@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Attest
+
 public enum Demos: Int {
     case SpeakableText_ActiveControl
     case ColorContrast_BlendedBackground
@@ -65,6 +67,53 @@ public enum Demos: Int {
         }
         
         return results
+    }
+
+    public func applicableRule() -> RuleID {
+        switch (self) {
+
+        case .AccessibilityHint_Stepper:
+            return RuleID.AccessibilityHint
+
+        case .NestedA11yElements_ButtonsNestedInA11yElement:
+            return RuleID.NestedA11yElements
+
+        case .ColorContrast_BlendedBackground:
+            return RuleID.ColorContrast
+
+        case .ColorContrast_LargeText:
+            return RuleID.ColorContrast
+
+        case .ColorContrast_BlendedText:
+            return RuleID.ColorContrast
+
+        case .ColorContrast_ColorContrast:
+            return RuleID.ColorContrast
+
+        case .ConflictingTraits_ConflictingTraitsOnButton:
+            return RuleID.ConflictingTraits
+
+        case .DynamicType_FontType:
+            return RuleID.DynamicType
+
+        case .InHighlight_NotInFrame:
+            return RuleID.InHighlight
+
+        case .Overlap_OverlappingButton:
+            return RuleID.DontIntersect
+
+        case .Overlap_OverlappingLabel:
+            return RuleID.DontIntersect
+
+        case .SpeakableText_ActiveControl:
+            return RuleID.SpeakableText
+
+        case .SpeakableText_InformativeControl:
+            return RuleID.SpeakableText
+
+        case .TouchTargetSize_DefaultTouchTargetSize:
+            return RuleID.TouchTargetSize
+        }
     }
 }
 

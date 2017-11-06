@@ -29,6 +29,9 @@ class ButtonsNestedInA11yElement: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        brokenButton1.isAccessibilityElement = true
+        brokenButton2.isAccessibilityElement = true
         
         // Colors
         brokenButton1.tintColor = (DU_BLUE)
