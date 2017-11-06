@@ -257,10 +257,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCBDEB11F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "AttestiOSApp" */;
 			buildPhases = (
+				0F4249F51FB0BBF400B8CCD7 /* Build Attest Library */,
 				0FCBDE851F9E6C350059DB83 /* Sources */,
 				0FCBDE861F9E6C350059DB83 /* Frameworks */,
 				0FCBDE871F9E6C350059DB83 /* Resources */,
-				0FCBDEBB1F9E6D020059DB83 /* ShellScript */,
 				0F4F119C1FA265E6005D6D4B /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -276,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FCBDEB41F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "AttestiOSAppTests" */;
 			buildPhases = (
+				0F4249F61FB0C87100B8CCD7 /* Open Accessibility Inspector */,
 				0FCBDE991F9E6C350059DB83 /* Sources */,
 				0FCBDE9A1F9E6C350059DB83 /* Frameworks */,
 				0FCBDE9B1F9E6C350059DB83 /* Resources */,
@@ -392,18 +393,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FCBDEBB1F9E6D020059DB83 /* ShellScript */ = {
+		0F4249F51FB0BBF400B8CCD7 /* Build Attest Library */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Attest Library";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "rm -rf Framework\n\nif [ -d \"../AttestIOS.xcodeproj\" ]; then\n    #If the direcotry is there build the framework from Attest IOS project.\n    pushd ..\n    sh ./Scripts/build.sh\nelse\n    #If the directory isn't there fetch the framework from Agora.\n    sh ./Scripts/CurlFramework.sh\nfi\n\n";
+		};
+		0F4249F61FB0C87100B8CCD7 /* Open Accessibility Inspector */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Open Accessibility Inspector";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open /Applications/Xcode.app/Contents/Applications/Accessibility\\ Inspector.app/";
 		};
 /* End PBXShellScriptBuildPhase section */
 

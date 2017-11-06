@@ -1,0 +1,10 @@
+machine:
+    xcode:
+        version: 9.0
+
+test:
+    pre:
+        - open /Applications/Xcode.app/Contents/Applications/Accessibility\ Inspector.app/
+        
+    override:
+        - sh ./Scripts/Test.sh

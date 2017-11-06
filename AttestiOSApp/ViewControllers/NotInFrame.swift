@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Attest
 
 class NotInFrame: UIViewController, UIScrollViewDelegate {
 
