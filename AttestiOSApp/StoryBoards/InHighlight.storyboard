@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -122,6 +122,144 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aU8-IZ-bkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-525.60000000000002" y="-317.09145427286359"/>
+        </scene>
+        <!--Informative Focusable Controls-->
+        <scene sceneID="qbg-Ar-F8E">
+            <objects>
+                <viewController storyboardIdentifier="InformativeFocusableControls" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G98-kH-luh" customClass="InformativeFocusableControls" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wvx-70-OLc"/>
+                        <viewControllerLayoutGuide type="bottom" id="bIh-ca-kDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gpz-JT-Y2x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-ZZ-kKT">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informative Focusable Controls" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-FQ-0th">
+                                        <rect key="frame" x="20" y="20" width="336" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94h-Zv-ZT9" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="51" width="296" height="85.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qM-NB-a4i">
+                                                <rect key="frame" x="10" y="10" width="276" height="31.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoa-2P-tjh">
+                                                <rect key="frame" x="10" y="51.5" width="276" height="24"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="7qM-NB-a4i" firstAttribute="top" secondItem="94h-Zv-ZT9" secondAttribute="top" constant="10" id="1z2-I5-jrL"/>
+                                            <constraint firstItem="aoa-2P-tjh" firstAttribute="trailing" secondItem="7qM-NB-a4i" secondAttribute="trailing" id="LjG-9e-6S3"/>
+                                            <constraint firstItem="aoa-2P-tjh" firstAttribute="leading" secondItem="7qM-NB-a4i" secondAttribute="leading" id="SzM-yv-Djr"/>
+                                            <constraint firstAttribute="bottom" secondItem="aoa-2P-tjh" secondAttribute="bottom" constant="10" id="T7o-q3-Rfl"/>
+                                            <constraint firstItem="aoa-2P-tjh" firstAttribute="top" secondItem="7qM-NB-a4i" secondAttribute="bottom" constant="10" id="g6d-ij-8e4"/>
+                                            <constraint firstAttribute="trailing" secondItem="7qM-NB-a4i" secondAttribute="trailing" constant="10" id="ket-pi-w22"/>
+                                            <constraint firstItem="7qM-NB-a4i" firstAttribute="leading" secondItem="94h-Zv-ZT9" secondAttribute="leading" constant="10" id="qmO-xe-cDa"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-ZJ-nfG">
+                                        <rect key="frame" x="20" y="147" width="336" height="174.5"/>
+                                        <string key="text">In this example, the first label contains all of the accessibility information in the view, and the second label is marked as a non-accessibility element, so VoiceOver will never focus the second label. This will be confusing for sighted VoiceOver users, who wish to understand what the second label says.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mu0-bW-J7E" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="331.5" width="296" height="85.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-Jo-7dB">
+                                                <rect key="frame" x="10" y="10" width="276" height="31.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AG-ec-jKP">
+                                                <rect key="frame" x="10" y="51.5" width="276" height="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="GUL-Jo-7dB" secondAttribute="trailing" constant="10" id="LUx-2g-OSh"/>
+                                            <constraint firstItem="6AG-ec-jKP" firstAttribute="top" secondItem="GUL-Jo-7dB" secondAttribute="bottom" constant="10" id="Nt0-Kb-58i"/>
+                                            <constraint firstItem="6AG-ec-jKP" firstAttribute="trailing" secondItem="GUL-Jo-7dB" secondAttribute="trailing" id="XsC-Ho-EG4"/>
+                                            <constraint firstItem="6AG-ec-jKP" firstAttribute="leading" secondItem="GUL-Jo-7dB" secondAttribute="leading" id="lC1-FT-sdW"/>
+                                            <constraint firstItem="GUL-Jo-7dB" firstAttribute="leading" secondItem="Mu0-bW-J7E" secondAttribute="leading" constant="10" id="lTC-Fm-qzA"/>
+                                            <constraint firstItem="GUL-Jo-7dB" firstAttribute="top" secondItem="Mu0-bW-J7E" secondAttribute="top" constant="10" id="spW-mV-Kxg"/>
+                                            <constraint firstAttribute="bottom" secondItem="6AG-ec-jKP" secondAttribute="bottom" constant="10" id="yYx-uZ-g8W"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-aH-bBY">
+                                        <rect key="frame" x="20" y="427" width="336" height="86.5"/>
+                                        <string key="text">To fix this, we have updated the view to be focusable, and have set the view's accessibility label to contain both labels' texts.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="v5v-aH-bBY" secondAttribute="bottom" constant="20" id="3du-b6-hkE"/>
+                                    <constraint firstItem="94h-Zv-ZT9" firstAttribute="leading" secondItem="aF9-ZZ-kKT" secondAttribute="leading" constant="40" id="60a-J8-vp5"/>
+                                    <constraint firstItem="Mu0-bW-J7E" firstAttribute="top" secondItem="tR8-ZJ-nfG" secondAttribute="bottom" constant="10" id="7Co-ce-OEp"/>
+                                    <constraint firstItem="tR8-ZJ-nfG" firstAttribute="trailing" secondItem="v5v-aH-bBY" secondAttribute="trailing" id="819-Gz-2sQ"/>
+                                    <constraint firstItem="v5v-aH-bBY" firstAttribute="top" secondItem="Mu0-bW-J7E" secondAttribute="bottom" constant="10" id="CMq-Nc-WNh"/>
+                                    <constraint firstItem="94h-Zv-ZT9" firstAttribute="top" secondItem="oTQ-FQ-0th" secondAttribute="bottom" constant="10" id="Dlb-Uk-Pr5"/>
+                                    <constraint firstItem="oTQ-FQ-0th" firstAttribute="top" secondItem="aF9-ZZ-kKT" secondAttribute="top" constant="20" id="EOs-qb-VVM"/>
+                                    <constraint firstItem="Mu0-bW-J7E" firstAttribute="leading" secondItem="94h-Zv-ZT9" secondAttribute="leading" id="F9G-jG-SVi"/>
+                                    <constraint firstItem="Mu0-bW-J7E" firstAttribute="trailing" secondItem="94h-Zv-ZT9" secondAttribute="trailing" id="NPb-uF-yoP"/>
+                                    <constraint firstAttribute="trailing" secondItem="94h-Zv-ZT9" secondAttribute="trailing" constant="40" id="cWF-fL-Zl3"/>
+                                    <constraint firstItem="oTQ-FQ-0th" firstAttribute="trailing" secondItem="tR8-ZJ-nfG" secondAttribute="trailing" id="cy4-Zj-QkW"/>
+                                    <constraint firstItem="tR8-ZJ-nfG" firstAttribute="leading" secondItem="v5v-aH-bBY" secondAttribute="leading" id="eIK-RJ-mCY"/>
+                                    <constraint firstItem="oTQ-FQ-0th" firstAttribute="leading" secondItem="tR8-ZJ-nfG" secondAttribute="leading" id="rEe-Kf-msP"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTQ-FQ-0th" secondAttribute="trailing" constant="20" id="xkm-Fb-lXB"/>
+                                    <constraint firstItem="oTQ-FQ-0th" firstAttribute="leading" secondItem="aF9-ZZ-kKT" secondAttribute="leading" constant="20" id="yJd-7I-VGg"/>
+                                    <constraint firstItem="tR8-ZJ-nfG" firstAttribute="top" secondItem="94h-Zv-ZT9" secondAttribute="bottom" constant="10" id="yPP-mU-ALc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aF9-ZZ-kKT" firstAttribute="centerX" secondItem="gpz-JT-Y2x" secondAttribute="centerX" id="g7U-fJ-xfY"/>
+                            <constraint firstItem="oTQ-FQ-0th" firstAttribute="centerX" secondItem="gpz-JT-Y2x" secondAttribute="centerX" id="jWK-cH-Lsq"/>
+                            <constraint firstItem="bIh-ca-kDJ" firstAttribute="top" secondItem="aF9-ZZ-kKT" secondAttribute="bottom" id="t5R-9p-zc5"/>
+                            <constraint firstItem="aF9-ZZ-kKT" firstAttribute="width" secondItem="gpz-JT-Y2x" secondAttribute="width" id="vvQ-AG-HrN"/>
+                            <constraint firstItem="aF9-ZZ-kKT" firstAttribute="top" secondItem="Wvx-70-OLc" secondAttribute="bottom" id="ytY-XT-x8V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brokenLabel1" destination="7qM-NB-a4i" id="oLP-iH-oiv"/>
+                        <outlet property="brokenLabel2" destination="aoa-2P-tjh" id="a5q-Ih-Msu"/>
+                        <outlet property="fixedLabel1" destination="GUL-Jo-7dB" id="Jfm-no-fU0"/>
+                        <outlet property="fixedLabel2" destination="6AG-ec-jKP" id="OP1-TW-heS"/>
+                        <outlet property="fixedView" destination="Mu0-bW-J7E" id="RbB-b7-UTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4i-KE-9db" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="-317"/>
         </scene>
     </scenes>
 </document>
