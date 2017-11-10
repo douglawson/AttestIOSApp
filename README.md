@@ -12,6 +12,12 @@ Build Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs
 
 Attest for iOS is a Swift framework. Most of the features are also designed to work in Objective C. Link to it like you would any other framework.
 
+### Fetching Framework
+
+To make switching to new versions of the Framework and keep from pushing the library to VCS systems check out our framework fetch script.
+
+[Curl Attest Framework](https://github.com/dequelabs/AttestIOSApp/blob/master/Scripts/CurlFramework.sh)
+
 ## Unit Testing Examples
 
 Unit testing with the Attest for iOS Framework is easy! Check out the examples below.
@@ -39,10 +45,6 @@ When testing on the simulator, if you don't attach the Accessibility Inspector t
 XCode -> Open Developer Tool -> Accessibility Inspector
 
 Attach it to your simulator.
-
-### Menu Bar False Positives
-
-Some rules, in particular color contrast, can report false positives on Menu Bar elements.
 
 ## Disclaimer
 All Rights Reserved

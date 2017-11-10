@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Change this to the version of the framework you want.
-FRAMEWORK_VERSION=1.1.0_rc2
+FRAMEWORK_VERSION=1.1.0_rc2_xcode91
 
 #This has to match up with Fraqmework Search paths in XCode Build Configuration.
 FRAMEWORK_DIR=./Framework/Release
