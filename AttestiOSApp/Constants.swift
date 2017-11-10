@@ -19,7 +19,7 @@ public enum Demos: Int {
     case TouchTargetSize_DefaultTouchTargetSize
     case DynamicType_FontType
     case SpeakableText_InformativeControl
-    case InHighlight_InformativeFocusableControls
+    //case InHighlight_InformativeFocusableControls
     case ColorContrast_LargeText
     case InHighlight_NotInFrame
     case Overlap_OverlappingButton
@@ -95,9 +95,6 @@ public enum Demos: Int {
 
         case .DynamicType_FontType:
             return RuleID.DynamicType
-            
-        case .InHighlight_InformativeFocusableControls:
-            return RuleID.InHighlight
 
         case .InHighlight_NotInFrame:
             return RuleID.InHighlight

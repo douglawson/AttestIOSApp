@@ -197,7 +197,6 @@
 			children = (
 				0F4F11991FA265E6005D6D4B /* Attest.framework */,
 				0FCBDE8B1F9E6C350059DB83 /* AttestiOSApp */,
-				0F5E4FD31F9E86D20054CB04 /* Media.xcassets */,
 				0FCBDEA01F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEAB1F9E6C350059DB83 /* AttestiOSAppUITests */,
 				0FCBDE8A1F9E6C350059DB83 /* Products */,
@@ -225,6 +224,7 @@
 				0FB881B51FA8E4F70024E479 /* StoryBoards */,
 				0FB881B41FA8E48B0024E479 /* ViewControllers */,
 				0FB881B31FA8E2F00024E479 /* Views */,
+				0F5E4FD31F9E86D20054CB04 /* Media.xcassets */,
 			);
 			path = AttestiOSApp;
 			sourceTree = "<group>";
