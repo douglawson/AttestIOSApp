@@ -45,6 +45,3 @@ When testing on the simulator, if you don't attach the Accessibility Inspector t
 XCode -> Open Developer Tool -> Accessibility Inspector
 
 Attach it to your simulator.
-
-## Disclaimer
-All Rights Reserved
