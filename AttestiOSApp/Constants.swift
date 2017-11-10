@@ -19,6 +19,7 @@ public enum Demos: Int {
     case TouchTargetSize_DefaultTouchTargetSize
     case DynamicType_FontType
     case SpeakableText_InformativeControl
+    case InHighlight_InformativeFocusableControls
     case ColorContrast_LargeText
     case InHighlight_NotInFrame
     case Overlap_OverlappingButton
@@ -70,8 +71,7 @@ public enum Demos: Int {
     }
 
     public func applicableRule() -> RuleID {
-        switch (self) {
-
+        switch(self) {
         case .AccessibilityHint_Stepper:
             return RuleID.AccessibilityHint
 
@@ -95,6 +95,9 @@ public enum Demos: Int {
 
         case .DynamicType_FontType:
             return RuleID.DynamicType
+            
+        case .InHighlight_InformativeFocusableControls:
+            return RuleID.InHighlight
 
         case .InHighlight_NotInFrame:
             return RuleID.InHighlight
