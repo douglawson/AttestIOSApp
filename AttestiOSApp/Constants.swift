@@ -122,11 +122,11 @@ extension UIColor {
         var hexString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
 
         // String should be 6 or 8 characters
-        if hexString.characters.count < 6 { return UIColor.gray }
+        if hexString.count < 6 { return UIColor.gray }
 
         if hexString.contains("X") { hexString = String(hexString[hexString.index(of: "X")!...]) }
 
-        if hexString.characters.count != 6 { return UIColor.gray }
+        if hexString.count != 6 { return UIColor.gray }
 
         // Separate into r, g, and b substrings
         var start = hexString.startIndex
