@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F12A7071FBB4DAD00932780 /* IgnoreRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12A7061FBB4DAD00932780 /* IgnoreRules.swift */; };
 		0F4F119A1FA265E6005D6D4B /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
 		0F4F119B1FA265E6005D6D4B /* Attest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F12A7061FBB4DAD00932780 /* IgnoreRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRules.swift; sourceTree = "<group>"; };
 		0F4F11991FA265E6005D6D4B /* Attest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Attest.framework; path = Framework/Release/Attest.framework; sourceTree = "<group>"; };
 		0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAdjustingView.swift; sourceTree = "<group>"; };
 		0F5E4FD31F9E86D20054CB04 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				0FCBDEA31F9E6C350059DB83 /* Info.plist */,
 				0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */,
 				0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */,
+				0F12A7061FBB4DAD00932780 /* IgnoreRules.swift */,
 				0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */,
 				0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */,
 			);
@@ -454,6 +457,7 @@
 				B4A029701FAA3E0D0057D4C2 /* Constants.swift in Sources */,
 				0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */,
 				0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */,
+				0F12A7071FBB4DAD00932780 /* IgnoreRules.swift in Sources */,
 				0F69FB9B1FA9AD7B00A07BA4 /* DemoTests.swift in Sources */,
 				0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */,
 			);
