@@ -10,21 +10,23 @@ import UIKit
 import Attest
 
 public enum Demos: Int {
-    case SpeakableText_ActiveControl
-    case ColorContrast_BlendedBackground
-    case ColorContrast_BlendedText
-    case NestedA11yElements_ButtonsNestedInA11yElement
-    case ColorContrast_ColorContrast
-    case ConflictingTraits_ConflictingTraitsOnButton
-    case TouchTargetSize_DefaultTouchTargetSize
-    case DynamicType_FontType
-    case SpeakableText_InformativeControl
-    //case InHighlight_InformativeFocusableControls
-    case ColorContrast_LargeText
-    case InHighlight_NotInFrame
+
+    case ConflictingTraits_ConflictingTraits
+    case ColorContrast_Contrast
+    case ColorContrast_ContrastAlphaBlend
+    case ColorContrast_ContrastAlphaBlendText
+    case ColorContrast_ContrastLargeText
+    case DynamicType_DynamicTypeSystemFont
+    // case InformativeControl_InformativeFocusableControls
+    case InHighlight_ElementInFocusBox
+    case SpeakableText_LabelActiveControls
+    case AccessibilityHint_LabelAssociation
+    case SpeakableText_LabelInformativeControls
+    case NestedA11yElements_NestedElements
     case Overlap_OverlappingButton
     case Overlap_OverlappingLabel
-    case AccessibilityHint_Stepper
+    case TouchTargetSize_TouchTargetSize
+    // case VoiceOverNavigation_VoiceOverNavigation
 
     public func makeViewController() -> UIViewController {
         return UIStoryboard(name: self.storyBoardName(), bundle: nil).instantiateViewController(withIdentifier: self.viewControllerName())
@@ -71,48 +73,28 @@ public enum Demos: Int {
     }
 
     public func applicableRule() -> RuleID {
-        switch(self) {
-        case .AccessibilityHint_Stepper:
+        switch(self.storyBoardName()) {
+        case "AccessibilityHint":
             return RuleID.AccessibilityHint
-
-        case .NestedA11yElements_ButtonsNestedInA11yElement:
-            return RuleID.NestedA11yElements
-
-        case .ColorContrast_BlendedBackground:
+        case "ColorContrast":
             return RuleID.ColorContrast
-
-        case .ColorContrast_LargeText:
-            return RuleID.ColorContrast
-
-        case .ColorContrast_BlendedText:
-            return RuleID.ColorContrast
-
-        case .ColorContrast_ColorContrast:
-            return RuleID.ColorContrast
-
-        case .ConflictingTraits_ConflictingTraitsOnButton:
+        case "ConflictingTraits":
             return RuleID.ConflictingTraits
-
-        case .DynamicType_FontType:
+        case "DynamicType":
             return RuleID.DynamicType
-
-        case .InHighlight_NotInFrame:
+        case "InHighlight":
             return RuleID.InHighlight
-
-        case .Overlap_OverlappingButton:
+        case "NestedA11yElements":
+            return RuleID.NestedA11yElements
+        case "Overlap":
             return RuleID.DontIntersect
-
-        case .Overlap_OverlappingLabel:
-            return RuleID.DontIntersect
-
-        case .SpeakableText_ActiveControl:
+        case "SpeakableText":
             return RuleID.SpeakableText
-
-        case .SpeakableText_InformativeControl:
-            return RuleID.SpeakableText
-
-        case .TouchTargetSize_DefaultTouchTargetSize:
+        case "TouchTargetSize":
             return RuleID.TouchTargetSize
+        default:
+            print("No rule found matching \(self.storyBoardName)")
+            return RuleID.CustomRule
         }
     }
 }
@@ -154,14 +136,5 @@ extension UIColor {
 }
 
 //! Constants for colors in this project.
-let ORANGE = UIColor.colorWithHexString("EA3700")
-let DARK_BLUE = UIColor.colorWithHexString("021B3F")
-let LIGHT_BLUE = UIColor.colorWithHexString("E0EDF9")
-let BLUE = UIColor.colorWithHexString("093C8F")
-let GREEN = UIColor.colorWithHexString("2D6B20")
-let GRAY = UIColor.colorWithHexString("E0E3E9")
-let DQ_COLOR_WORLDSPACE_WHITE = UIColor.colorWithHexString("F2F2F4")
 let BROKEN_COLOR = UIColor.colorWithHexString("DC341A")
 let FIXED_COLOR = UIColor.colorWithHexString("72BA32")
-let DU_BLUE = UIColor.colorWithHexString("093C8F")
-

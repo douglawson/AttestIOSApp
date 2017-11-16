@@ -1,5 +1,5 @@
 //
-//  A11yHintStepperViewController.swift
+//  LabelAssociation.swift
 //  AttestIOS
 //
 //  Created by Jennifer Dailey on 8/30/17.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class Stepper: UIViewController {
+class LabelAssociation: UIViewController {
 
     @IBOutlet weak var brokenStepper: UIStepper!
     @IBOutlet weak var brokenCounter: UILabel!
-
     @IBOutlet weak var fixedStepper: UIStepper!
     @IBOutlet weak var fixedCounter: UILabel!
 
@@ -35,13 +34,7 @@ class Stepper: UIViewController {
     }
     
     @objc private func brokenStepperFunc(_ sender: Any) {
-
-        if (brokenCounter.text!.contains("Tom")) {
-            brokenCounter.text = "\(Int(brokenStepper.value)) Tomatoes"
-        } else {
-            brokenCounter.text = "\(Int(brokenStepper.value)) Bananas"
-        }
-
+        brokenCounter.text = "\(Int(brokenStepper.value)) Tomatoes"
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, brokenCounter.text)
     }
     

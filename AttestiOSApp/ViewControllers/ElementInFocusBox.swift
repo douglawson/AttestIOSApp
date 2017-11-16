@@ -1,5 +1,5 @@
 //
-//  InHighlight_Basic.swift
+//  ElementInFocusBox.swift
 //  AttestIOS
 //
 //  Created by Jennifer Dailey on 9/6/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotInFrame: UIViewController, UIScrollViewDelegate {
+class ElementInFocusBox: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var brokenButton: UIButton!
 
@@ -24,9 +24,11 @@ class NotInFrame: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         setA11yPaths()
     }
-    
     private func setA11yPaths() {
         let frame = brokenButton.getA11yFrame()
-        brokenButton.accessibilityPath = UIBezierPath(rect:CGRect.init(x: frame.origin.x, y: frame.origin.y, width: frame.width / 2, height: frame.height / 2))
+        brokenButton.accessibilityPath = UIBezierPath(rect: CGRect.init(x: frame.origin.x,
+                                                                        y: frame.origin.y,
+                                                                        width: frame.width / 2,
+                                                                        height: frame.height / 2))
     }
 }

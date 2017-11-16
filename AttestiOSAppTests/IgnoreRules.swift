@@ -20,7 +20,7 @@ class IgnoreRules: XCTestCase {
 
     //Testing using the above function as the result consumer.
     func testSuccessfullyIgnoringRules() {
-        Attest.that(storyBoardName:"ColorContrast", viewControllerID:"BlendedBackground").isAccessible(IgnoreRules.resultConsumer)
+        Attest.that(storyBoardName:"ColorContrast", viewControllerID:"ContrastAlphaBlend").isAccessible(IgnoreRules.resultConsumer)
         Attest.that(storyBoardName:"AccessibilityHint").isAccessible(IgnoreRules.resultConsumer)
     }
 }

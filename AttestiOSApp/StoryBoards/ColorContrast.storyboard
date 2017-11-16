@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Background Blending-->
+        <!--View Controller-->
         <scene sceneID="MXe-qj-2Ef">
             <objects>
-                <viewController storyboardIdentifier="BlendedBackground" title="Background Blending" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastAlphaBlend" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7b-Ea-d4r"/>
                         <viewControllerLayoutGuide type="bottom" id="bBf-ZQ-kNL"/>
@@ -23,7 +23,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-R5-iXA">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Alpha Background Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-a1-UbL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Contrast Alpha Blend Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-a1-UbL">
                                         <rect key="frame" x="20" y="20" width="335" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="-794.39999999999998" y="71.514242878560722"/>
         </scene>
-        <!--Text Blending-->
+        <!--View Controller-->
         <scene sceneID="dCq-mz-IbZ">
             <objects>
-                <viewController storyboardIdentifier="BlendedText" title="Text Blending" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastAlphaBlendText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GlR-Wg-kY9"/>
                         <viewControllerLayoutGuide type="bottom" id="ClF-J1-SVZ"/>
@@ -150,7 +150,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq7-KX-9oM">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha Foreground Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5I-F6-eL6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrast Alpha Blend Text Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5I-F6-eL6">
                                         <rect key="frame" x="20" y="20" width="335" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -265,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="-154" y="72"/>
         </scene>
-        <!--Color Contrast-->
+        <!--View Controller-->
         <scene sceneID="SmE-yd-QTK">
             <objects>
-                <viewController storyboardIdentifier="ColorContrast" title="Color Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MkC-ol-dER"/>
                         <viewControllerLayoutGuide type="bottom" id="jZH-Cf-Hmx"/>
@@ -280,7 +280,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AI-s1-Zfr">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-ek-3Aa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrast Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-ek-3Aa">
                                         <rect key="frame" x="20" y="20" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -394,7 +394,7 @@
         <!--View Controller-->
         <scene sceneID="qVu-5E-7ee">
             <objects>
-                <viewController storyboardIdentifier="LargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastLargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fy-Ab-xJz"/>
                         <viewControllerLayoutGuide type="bottom" id="BeS-5T-3zR"/>
@@ -406,7 +406,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-Hi-prJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Text Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us9-8i-6TJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contast Large Text Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us9-8i-6TJ">
                                         <rect key="frame" x="20" y="20" width="335" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>

@@ -24,15 +24,6 @@
 		0F5E4FB81F9E85290054CB04 /* TouchTargetSize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */; };
 		0F5E4FB91F9E85290054CB04 /* VoiceOverNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */; };
 		0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */; };
-		0F5E4FBC1F9E857D0054CB04 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDED71F9E6ED90059DB83 /* Stepper.swift */; };
-		0F5E4FCB1F9E857D0054CB04 /* NotInFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */; };
-		0F5E4FCC1F9E857D0054CB04 /* ButtonsNestedInA11yElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */; };
-		0F5E4FCD1F9E857D0054CB04 /* ActiveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */; };
-		0F5E4FCE1F9E857D0054CB04 /* InformativeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */; };
-		0F5E4FCF1F9E857D0054CB04 /* Other1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDF001F9E6EDD0059DB83 /* Other1.swift */; };
-		0F5E4FD01F9E857D0054CB04 /* DefaultTouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDF031F9E6EDD0059DB83 /* DefaultTouchTargetSize.swift */; };
-		0F5E4FD11F9E857D0054CB04 /* TouchTargetSizeScreenDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */; };
-		0F5E4FD21F9E857D0054CB04 /* VoiceOverNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */; };
 		0F5E4FD41F9E86D20054CB04 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E4FD31F9E86D20054CB04 /* Media.xcassets */; };
 		0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */; };
 		0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */; };
@@ -45,6 +36,12 @@
 		0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */; };
 		0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */; };
 		B4A029701FAA3E0D0057D4C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
+		EE5BB7E21FBC887800486581 /* VoiceOverNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */; };
+		EE5BB7E31FBC887800486581 /* ElementInFocusBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */; };
+		EE5BB7E41FBC887800486581 /* InformativeFocusableControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */; };
+		EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */; };
+		EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
+		EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,28 +96,25 @@
 		0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityHint.storyboard; sourceTree = "<group>"; };
-		0FCBDED71F9E6ED90059DB83 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorContrast.storyboard; sourceTree = "<group>"; };
 		0FCBDEE01F9E6EDA0059DB83 /* ConflictingTraits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConflictingTraits.storyboard; sourceTree = "<group>"; };
 		0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VoiceOverNavigation.storyboard; sourceTree = "<group>"; };
-		0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverNavigation.swift; sourceTree = "<group>"; };
 		0FCBDEE61F9E6EDA0059DB83 /* InHighlight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InHighlight.storyboard; sourceTree = "<group>"; };
-		0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotInFrame.swift; sourceTree = "<group>"; };
 		0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yStepper.swift; sourceTree = "<group>"; };
-		0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsNestedInA11yElement.swift; sourceTree = "<group>"; };
 		0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NestedA11yElements.storyboard; sourceTree = "<group>"; };
 		0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicType.storyboard; sourceTree = "<group>"; };
 		0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Overlap.storyboard; sourceTree = "<group>"; };
-		0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveControl.swift; sourceTree = "<group>"; };
-		0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformativeControl.swift; sourceTree = "<group>"; };
-		0FCBDF001F9E6EDD0059DB83 /* Other1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other1.swift; sourceTree = "<group>"; };
 		0FCBDF011F9E6EDD0059DB83 /* SpeakableText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeakableText.storyboard; sourceTree = "<group>"; };
-		0FCBDF031F9E6EDD0059DB83 /* DefaultTouchTargetSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTouchTargetSize.swift; sourceTree = "<group>"; };
 		0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TouchTargetSize.storyboard; sourceTree = "<group>"; };
-		0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTargetSizeScreenDependent.swift; sourceTree = "<group>"; };
 		0FCBDF081F9E6F120059DB83 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverNavigation.swift; sourceTree = "<group>"; };
+		EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementInFocusBox.swift; sourceTree = "<group>"; };
+		EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformativeFocusableControls.swift; sourceTree = "<group>"; };
+		EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelActiveControls.swift; sourceTree = "<group>"; };
+		EE5BB7E01FBC887800486581 /* LabelAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAssociation.swift; sourceTree = "<group>"; };
+		EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTargetSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,15 +156,12 @@
 		0FB881B41FA8E48B0024E479 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0FCBDEFE1F9E6EDD0059DB83 /* ActiveControl.swift */,
-				0FCBDEEC1F9E6EDB0059DB83 /* ButtonsNestedInA11yElement.swift */,
-				0FCBDF031F9E6EDD0059DB83 /* DefaultTouchTargetSize.swift */,
-				0FCBDEFF1F9E6EDD0059DB83 /* InformativeControl.swift */,
-				0FCBDEE71F9E6EDA0059DB83 /* NotInFrame.swift */,
-				0FCBDF001F9E6EDD0059DB83 /* Other1.swift */,
-				0FCBDED71F9E6ED90059DB83 /* Stepper.swift */,
-				0FCBDF051F9E6EDD0059DB83 /* TouchTargetSizeScreenDependent.swift */,
-				0FCBDEE41F9E6EDA0059DB83 /* VoiceOverNavigation.swift */,
+				EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */,
+				EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */,
+				EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */,
+				EE5BB7E01FBC887800486581 /* LabelAssociation.swift */,
+				EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */,
+				EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -431,22 +422,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */,
 				0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */,
-				0F5E4FBC1F9E857D0054CB04 /* Stepper.swift in Sources */,
-				0F5E4FCB1F9E857D0054CB04 /* NotInFrame.swift in Sources */,
-				0F5E4FCC1F9E857D0054CB04 /* ButtonsNestedInA11yElement.swift in Sources */,
-				0F5E4FCD1F9E857D0054CB04 /* ActiveControl.swift in Sources */,
-				0F5E4FCE1F9E857D0054CB04 /* InformativeControl.swift in Sources */,
-				0F5E4FCF1F9E857D0054CB04 /* Other1.swift in Sources */,
-				0F5E4FD01F9E857D0054CB04 /* DefaultTouchTargetSize.swift in Sources */,
 				0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */,
-				0F5E4FD11F9E857D0054CB04 /* TouchTargetSizeScreenDependent.swift in Sources */,
-				0F5E4FD21F9E857D0054CB04 /* VoiceOverNavigation.swift in Sources */,
+				EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */,
 				0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */,
 				0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */,
 				0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */,
+				EE5BB7E41FBC887800486581 /* InformativeFocusableControls.swift in Sources */,
+				EE5BB7E31FBC887800486581 /* ElementInFocusBox.swift in Sources */,
 				0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */,
 				0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */,
+				EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */,
+				EE5BB7E21FBC887800486581 /* VoiceOverNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

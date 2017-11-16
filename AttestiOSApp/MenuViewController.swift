@@ -8,18 +8,19 @@
 
 import UIKit
 
-let RULES_IDENTIFIER = "Rules"
-let RULES_STORIES_IDENTIFIER = "RuleStoriesCell"
+let DEMO_IDENTIFIER = "Demos"
+let DEMO_STORIES_IDENTIFIER = "DemoStoryCell"
 
-let RULES_TITLE_TAG = 90
-let RULE_LABEL_TAG = 101
-let RULE_IMAGE_TAG = 110
+let DEMO_TITLE_TAG = 90
+let DEMO_LABEL_TAG = 101
+let DEMO_IMAGE_TAG = 110
 
-let RULES_SECTION_NUM = 0
-let RULES_STORIES_NUM = 1
+let DEMO_IDENTIFIER_NUM = 0
+let DEMO_STORIES_NUM = 1
 
 class MenuViewController: UITableViewController {
 
+    // Updating views for dynamic type
     @objc private func didChangePreferredContentSize() {
 
         let contentSize = UIApplication.shared.preferredContentSizeCategory
@@ -48,12 +49,8 @@ class MenuViewController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.didChangePreferredContentSize()
         
+        // Notification for dynamic type
         NotificationCenter.default.addObserver(self, selector: #selector(didChangePreferredContentSize), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
-
-        // selecting introduction cell
-        let indexPath = IndexPath.init(row: 0, section: 1)
-        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.bottom)
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -61,7 +58,7 @@ class MenuViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == RULES_STORIES_NUM {
+        if section == DEMO_STORIES_NUM {
             return Demos.count()
         }
         
@@ -70,25 +67,24 @@ class MenuViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell
-        var label: UILabel
+        var cellLabel: UILabel
         
-        if indexPath.section == RULES_SECTION_NUM {
-            cell = tableView.dequeueReusableCell(withIdentifier: RULES_IDENTIFIER, for: indexPath)
-            label = cell.viewWithTag(RULES_TITLE_TAG) as! UILabel
-            label.text = "Attest for iOS"
+        if indexPath.section == DEMO_IDENTIFIER_NUM {
+            cell = tableView.dequeueReusableCell(withIdentifier: DEMO_IDENTIFIER, for: indexPath)
+            cellLabel = cell.viewWithTag(DEMO_TITLE_TAG) as! UILabel
+            cellLabel.text = "Attest for iOS"
         } else {
-            cell = self.tableView.dequeueReusableCell(withIdentifier: RULES_STORIES_IDENTIFIER, for: indexPath)
+            let demoName = Demos.values()[indexPath.row].viewControllerName()
 
-            let label = cell.viewWithTag(RULE_LABEL_TAG) as! UILabel
+            cell = self.tableView.dequeueReusableCell(withIdentifier: DEMO_STORIES_IDENTIFIER, for: indexPath)
+            cellLabel = cell.viewWithTag(DEMO_LABEL_TAG) as! UILabel
 
-            let ruleId = Demos.values()[indexPath.row].viewControllerName()
-            label.text = ruleId
-            label.isAccessibilityElement = false
+            cellLabel.text = demoName
+            cellLabel.isAccessibilityElement = false
 
             // setting accessibility label
             let demoTab = String.localizedStringWithFormat(" %tu of ", indexPath.row + 1)
-
-            cell.accessibilityLabel = label.text! + demoTab + String.localizedStringWithFormat("%lu", Demos.names().count)
+            cell.accessibilityLabel = cellLabel.text! + demoTab + String.localizedStringWithFormat("%lu", Demos.names().count)
         }
         
         let selectedView = UIView()
@@ -96,10 +92,10 @@ class MenuViewController: UITableViewController {
 
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
 
-        if indexPath.section == RULES_SECTION_NUM {
+        if indexPath.section == DEMO_IDENTIFIER_NUM {
             return nil
         }
 
@@ -108,7 +104,7 @@ class MenuViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.section == RULES_STORIES_NUM {
+        if indexPath.section == DEMO_STORIES_NUM {
             let pattern = Demos.values()[indexPath.row]
             let viewController = pattern.makeViewController()
             viewController.title = "\(pattern.storyBoardName())"

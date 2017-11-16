@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Buttons Nested InA1 1y Element-->
+        <!--View Controller-->
         <scene sceneID="dkm-ev-vOA">
             <objects>
-                <viewController storyboardIdentifier="ButtonsNestedInA11yElement" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dKl-bI-op5" customClass="ButtonsNestedInA11yElement" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NestedElements" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dKl-bI-op5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cB3-xi-b0I"/>
                         <viewControllerLayoutGuide type="bottom" id="Waw-Uc-M3b"/>
@@ -23,7 +23,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbb-LK-uKT">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nested A11y Elements Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W75-P4-g5q">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nested Elements Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W75-P4-g5q">
                                         <rect key="frame" x="20" y="20" width="335" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -36,20 +36,26 @@
                                                 <rect key="frame" x="10" y="10" width="295" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFf-bM-YBQ">
-                                                        <rect key="frame" x="10" y="10" width="51" height="62"/>
+                                                        <rect key="frame" x="10" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="aXM-F7-Spg"/>
+                                                            <constraint firstAttribute="width" constant="62" id="oe1-wk-X0i"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Left">
+                                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-dp-hXW">
-                                                        <rect key="frame" x="234" y="10" width="51" height="62"/>
+                                                        <rect key="frame" x="223" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="IVg-aH-acr"/>
+                                                            <constraint firstAttribute="width" constant="62" id="SwS-cA-G3L"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Right">
+                                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +80,7 @@
                                             <constraint firstItem="YLU-RA-HWm" firstAttribute="leading" secondItem="BAs-zd-q2C" secondAttribute="leading" constant="10" id="r2r-RR-JTf"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-Ae-kWP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-Ae-kWP">
                                         <rect key="frame" x="20" y="163" width="335" height="130.5"/>
                                         <string key="text">The gray view containing both buttons is marked as an accessibility element.  VoiceOver will only focus on the outer accessibility element, the view. This means that the two buttons are completely inaccessible to VoiceOver users.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -88,20 +94,26 @@
                                                 <rect key="frame" x="10" y="10" width="295" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-s4-RuT">
-                                                        <rect key="frame" x="10" y="10" width="51" height="62"/>
+                                                        <rect key="frame" x="10" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="WY5-VF-LkX"/>
+                                                            <constraint firstAttribute="width" constant="62" id="vjo-4v-p7c"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Left">
+                                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-6j-sjQ">
-                                                        <rect key="frame" x="234" y="10" width="51" height="62"/>
+                                                        <rect key="frame" x="223" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="4oK-zI-SY8"/>
+                                                            <constraint firstAttribute="width" constant="62" id="Xzc-1S-oDv"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Right">
+                                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,7 +135,7 @@
                                             <constraint firstItem="3eV-gX-ee1" firstAttribute="leading" secondItem="5lL-81-HUP" secondAttribute="leading" constant="10" id="IQO-ds-fQh"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To fix this, we simply change the view's &quot;isAccessibilityElement&quot; to false." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxs-Ek-l27">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To fix this, we simply change the view's &quot;isAccessibilityElement&quot; to false." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxs-Ek-l27">
                                         <rect key="frame" x="20" y="415.5" width="335" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
@@ -159,15 +171,6 @@
                             <constraint firstItem="Waw-Uc-M3b" firstAttribute="top" secondItem="Nbb-LK-uKT" secondAttribute="bottom" id="wka-25-JJJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="brokenButton1" destination="yFf-bM-YBQ" id="hrq-Jv-AiU"/>
-                        <outlet property="brokenButton2" destination="r4n-dp-hXW" id="Jci-ph-k8T"/>
-                        <outlet property="brokenDescription" destination="1ZS-Ae-kWP" id="uAT-ga-z5b"/>
-                        <outlet property="fixedButton1" destination="RVl-s4-RuT" id="dPM-QY-tcW"/>
-                        <outlet property="fixedButton2" destination="9LO-6j-sjQ" id="6sc-in-rOJ"/>
-                        <outlet property="fixedDescription" destination="rxs-Ek-l27" id="i2V-D9-tXC"/>
-                        <outlet property="viewTitle" destination="W75-P4-g5q" id="vhK-xF-0Iw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKZ-7I-yi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
