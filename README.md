@@ -1,8 +1,7 @@
-# WorldSpace Attest for iOS Mobile Application
-The integration test suite for the Attest for iOS product. Also serves as examples and documentation
-of best practices on how to use the Attest for iOS Automated Accessibility Scanning Library. The application
-itself is a very simple series of ViewControllers that aim to demo one aspect of accessibility api usage.
-Within each example is a demo of how to misuse iOS APIs and how to use them properly.
+# WorldSpace Attest for iOS Demo Application
+This application contains a series of simple ViewControllers that demonstrates the types of Accessibility Issues the Attest for iOS Framework looks for when it does an analysis. This repository also serves as documentation on how to link to and build accessibility tests against an application. While being the easiest place to start, you are also welcome to grab the framework (see Fetching Framework) and build it against your own application directly. 
+
+NOTE: The version of the framework you will fetch is functionally limited. You will get reports from every rule on the number of violations, but will only get debugging information for the Color Contrast rule. Contact a Deque representative if you're interested in licensing Attest for iOS and gaining access to this information for the other rules.
 
 Attest for iOS Libarry 1.0 Branch: [![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
 
