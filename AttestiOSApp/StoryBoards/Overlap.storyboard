@@ -272,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="-20" y="27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Informative Control View Controller-->
         <scene sceneID="Zw6-Ry-2Nh">
             <objects>
-                <viewController storyboardIdentifier="OverlappingLabel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zTw-mG-u7O" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlappingLabel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zTw-mG-u7O" customClass="InformativeControlViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wrD-i7-Ah8"/>
                         <viewControllerLayoutGuide type="bottom" id="3I3-P4-Qeb"/>
@@ -357,19 +357,34 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6at-Tj-JGn">
+                                        <rect key="frame" x="20" y="348.5" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.8">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.8">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="zTw-mG-u7O" eventType="touchUpInside" id="WAZ-wv-HvM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gld-jL-VI8" firstAttribute="top" secondItem="Qgc-tb-dFZ" secondAttribute="bottom" constant="10" id="4LY-7T-g6x"/>
                                     <constraint firstItem="2E3-Ue-0bA" firstAttribute="top" secondItem="OE4-KN-dWL" secondAttribute="top" constant="20" id="5cK-dk-xNc"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hef-KQ-tNj" secondAttribute="bottom" constant="10" id="9ZB-mo-fWa"/>
+                                    <constraint firstAttribute="bottom" secondItem="6at-Tj-JGn" secondAttribute="bottom" constant="20" id="Gck-u0-tuj"/>
                                     <constraint firstItem="zxI-jm-cJb" firstAttribute="trailing" secondItem="gld-jL-VI8" secondAttribute="trailing" id="HgO-A3-Bb0"/>
                                     <constraint firstItem="2E3-Ue-0bA" firstAttribute="trailing" secondItem="Qgc-tb-dFZ" secondAttribute="trailing" id="JRq-jp-nTO"/>
                                     <constraint firstItem="zxI-jm-cJb" firstAttribute="leading" secondItem="gld-jL-VI8" secondAttribute="leading" id="NKt-oS-WAc"/>
                                     <constraint firstItem="Qgc-tb-dFZ" firstAttribute="leading" secondItem="Hef-KQ-tNj" secondAttribute="leading" id="Nhf-Ya-ffk"/>
+                                    <constraint firstItem="6at-Tj-JGn" firstAttribute="leading" secondItem="Hef-KQ-tNj" secondAttribute="leading" id="Raw-er-ISs"/>
                                     <constraint firstItem="Qgc-tb-dFZ" firstAttribute="top" secondItem="zxI-jm-cJb" secondAttribute="bottom" constant="10" id="WU5-c5-Poi"/>
                                     <constraint firstItem="zxI-jm-cJb" firstAttribute="leading" secondItem="OE4-KN-dWL" secondAttribute="leading" constant="30" id="by4-mh-RIx"/>
                                     <constraint firstItem="zxI-jm-cJb" firstAttribute="top" secondItem="2E3-Ue-0bA" secondAttribute="bottom" constant="10" id="c7k-sm-5xU"/>
                                     <constraint firstItem="Qgc-tb-dFZ" firstAttribute="trailing" secondItem="Hef-KQ-tNj" secondAttribute="trailing" id="fQz-LJ-Aas"/>
+                                    <constraint firstItem="6at-Tj-JGn" firstAttribute="top" secondItem="Hef-KQ-tNj" secondAttribute="bottom" constant="20" id="jOq-63-hsg"/>
                                     <constraint firstItem="2E3-Ue-0bA" firstAttribute="leading" secondItem="Qgc-tb-dFZ" secondAttribute="leading" id="lOd-iO-Avy"/>
                                     <constraint firstAttribute="trailing" secondItem="2E3-Ue-0bA" secondAttribute="trailing" constant="20" id="lVr-rJ-ujR"/>
                                     <constraint firstAttribute="trailing" secondItem="zxI-jm-cJb" secondAttribute="trailing" constant="30" id="nza-9d-mVs"/>

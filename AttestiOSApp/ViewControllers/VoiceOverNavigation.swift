@@ -14,6 +14,11 @@ class VoiceOverNavigation : UIViewController {
     @IBOutlet weak var fixedCButton: UIButton!
     @IBOutlet weak var fixedView: FixedView!
     
+    @IBAction func wcagLink() {
+        let url = URL(string: "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

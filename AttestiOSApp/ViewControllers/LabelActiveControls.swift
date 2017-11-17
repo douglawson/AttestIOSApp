@@ -20,6 +20,11 @@ class LabelActiveControls: UIViewController, UIScrollViewDelegate {
         let url = URL.init(string: "http://www.google.com/")
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
+    
+    @IBAction func wcagLink() {
+        let url = URL(string: "https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +34,6 @@ class LabelActiveControls: UIViewController, UIScrollViewDelegate {
         
         fixedButtonView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(openLink(_:))))
     }
+    
 }
 

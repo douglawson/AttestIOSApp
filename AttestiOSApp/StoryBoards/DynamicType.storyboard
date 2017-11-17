@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dynamic Type-->
         <scene sceneID="0Mg-3U-aMm">
             <objects>
-                <viewController storyboardIdentifier="AutoAdjust" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wwU-98-FzG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DynamicTypeAutoAdjust" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wwU-98-FzG" customClass="DynamicType" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eE0-AS-2n8"/>
                         <viewControllerLayoutGuide type="bottom" id="Bk6-Oe-eyQ"/>
@@ -67,16 +67,31 @@
                                             <constraint firstItem="M5N-s1-Odh" firstAttribute="top" secondItem="H0U-2i-rB7" secondAttribute="top" constant="10" id="i3f-Wl-Wc8"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3E-cZ-diL">
+                                        <rect key="frame" x="20" y="382" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.4">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.4">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="wwU-98-FzG" eventType="touchUpInside" id="n5g-UR-TzY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="hs3-Wq-Yeu" firstAttribute="top" secondItem="U4n-2P-Kyg" secondAttribute="bottom" constant="10" id="1cR-82-gbd"/>
+                                    <constraint firstItem="R3E-cZ-diL" firstAttribute="leading" secondItem="H0U-2i-rB7" secondAttribute="leading" id="40O-6d-0QG"/>
+                                    <constraint firstItem="R3E-cZ-diL" firstAttribute="top" secondItem="H0U-2i-rB7" secondAttribute="bottom" constant="20" id="5DV-ND-ckU"/>
                                     <constraint firstAttribute="trailing" secondItem="U4n-2P-Kyg" secondAttribute="trailing" constant="20" id="B6n-Sn-bur"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="top" secondItem="buU-j8-oga" secondAttribute="top" constant="20" id="DPK-yX-CgD"/>
                                     <constraint firstItem="hs3-Wq-Yeu" firstAttribute="leading" secondItem="H0U-2i-rB7" secondAttribute="leading" id="G2c-gb-Izj"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="leading" secondItem="buU-j8-oga" secondAttribute="leading" constant="20" id="Kji-uS-Fr9"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="leading" secondItem="hs3-Wq-Yeu" secondAttribute="leading" id="L2h-fT-HFm"/>
                                     <constraint firstItem="H0U-2i-rB7" firstAttribute="top" secondItem="hs3-Wq-Yeu" secondAttribute="bottom" constant="10" id="LmJ-3z-I7f"/>
-                                    <constraint firstAttribute="bottom" secondItem="H0U-2i-rB7" secondAttribute="bottom" constant="10" id="SV6-y8-2GX"/>
+                                    <constraint firstAttribute="bottom" secondItem="R3E-cZ-diL" secondAttribute="bottom" constant="20" id="VFh-8B-Fda"/>
                                     <constraint firstItem="U4n-2P-Kyg" firstAttribute="trailing" secondItem="hs3-Wq-Yeu" secondAttribute="trailing" id="gBn-Gh-tig"/>
                                     <constraint firstItem="hs3-Wq-Yeu" firstAttribute="trailing" secondItem="H0U-2i-rB7" secondAttribute="trailing" id="zzW-bB-xBm"/>
                                 </constraints>
@@ -96,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="-521.5" y="86.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Dynamic Type-->
         <scene sceneID="xdZ-De-Z3U">
             <objects>
-                <viewController storyboardIdentifier="DynamicTypeSystemFont" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m4o-Go-tMI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DynamicTypeSystemFont" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m4o-Go-tMI" customClass="DynamicType" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zBw-AV-1TV"/>
                         <viewControllerLayoutGuide type="bottom" id="tYO-sb-nl6"/>
@@ -154,9 +169,24 @@
                                             <constraint firstItem="UZu-ZJ-kHM" firstAttribute="top" secondItem="Cjx-4N-nrb" secondAttribute="top" constant="10" id="z7l-1Z-qhf"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHI-aT-hwz">
+                                        <rect key="frame" x="20" y="287" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.4">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.4">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="m4o-Go-tMI" eventType="touchUpInside" id="188-xY-GDG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Cjx-4N-nrb" secondAttribute="bottom" constant="10" id="FwU-ra-scj"/>
+                                    <constraint firstItem="rHI-aT-hwz" firstAttribute="leading" secondItem="Cjx-4N-nrb" secondAttribute="leading" id="0ys-Fj-GZZ"/>
+                                    <constraint firstItem="rHI-aT-hwz" firstAttribute="top" secondItem="Cjx-4N-nrb" secondAttribute="bottom" constant="20" id="1cb-KZ-bXS"/>
+                                    <constraint firstAttribute="bottom" secondItem="rHI-aT-hwz" secondAttribute="bottom" constant="20" id="ASv-jQ-FSe"/>
                                     <constraint firstItem="Dxq-Wa-zsf" firstAttribute="trailing" secondItem="N3q-gI-FhE" secondAttribute="trailing" id="Lpd-vj-jez"/>
                                     <constraint firstAttribute="trailing" secondItem="Dxq-Wa-zsf" secondAttribute="trailing" constant="20" id="Otz-L2-jnZ"/>
                                     <constraint firstItem="Dxq-Wa-zsf" firstAttribute="leading" secondItem="N3q-gI-FhE" secondAttribute="leading" id="QbB-C5-LaQ"/>

@@ -42,6 +42,11 @@
 		EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */; };
 		EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
 		EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
+		EE5BB7F71FBF3ECE00486581 /* LabelInformativeControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7F61FBF3ECE00486581 /* LabelInformativeControls.swift */; };
+		EE5BB7F91FBF406D00486581 /* Contrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7F81FBF406D00486581 /* Contrast.swift */; };
+		EE5BB7FB1FBF418400486581 /* DynamicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7FA1FBF418400486581 /* DynamicType.swift */; };
+		EE5BB7FD1FBF48F900486581 /* InformativeControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5BB7FC1FBF48F900486581 /* InformativeControl.storyboard */; };
+		EE5BB7FF1FBF551800486581 /* InformativeControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7FE1FBF551800486581 /* InformativeControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,11 @@
 		EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelActiveControls.swift; sourceTree = "<group>"; };
 		EE5BB7E01FBC887800486581 /* LabelAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAssociation.swift; sourceTree = "<group>"; };
 		EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTargetSize.swift; sourceTree = "<group>"; };
+		EE5BB7F61FBF3ECE00486581 /* LabelInformativeControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelInformativeControls.swift; sourceTree = "<group>"; };
+		EE5BB7F81FBF406D00486581 /* Contrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrast.swift; sourceTree = "<group>"; };
+		EE5BB7FA1FBF418400486581 /* DynamicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicType.swift; sourceTree = "<group>"; };
+		EE5BB7FC1FBF48F900486581 /* InformativeControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InformativeControl.storyboard; sourceTree = "<group>"; };
+		EE5BB7FE1FBF551800486581 /* InformativeControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformativeControlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +166,13 @@
 		0FB881B41FA8E48B0024E479 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BB7F81FBF406D00486581 /* Contrast.swift */,
+				EE5BB7FA1FBF418400486581 /* DynamicType.swift */,
 				EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */,
+				EE5BB7FE1FBF551800486581 /* InformativeControlViewController.swift */,
 				EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */,
 				EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */,
+				EE5BB7F61FBF3ECE00486581 /* LabelInformativeControls.swift */,
 				EE5BB7E01FBC887800486581 /* LabelAssociation.swift */,
 				EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */,
 				EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */,
@@ -176,6 +190,7 @@
 				0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */,
 				0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */,
 				0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */,
+				EE5BB7FC1FBF48F900486581 /* InformativeControl.storyboard */,
 				0FCBDEE61F9E6EDA0059DB83 /* InHighlight.storyboard */,
 				0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */,
 				0FCBDF011F9E6EDD0059DB83 /* SpeakableText.storyboard */,
@@ -367,6 +382,7 @@
 				0F5E4FB81F9E85290054CB04 /* TouchTargetSize.storyboard in Resources */,
 				0F5E4FB91F9E85290054CB04 /* VoiceOverNavigation.storyboard in Resources */,
 				0F5E4FAE1F9E84EB0054CB04 /* Main.storyboard in Resources */,
+				EE5BB7FD1FBF48F900486581 /* InformativeControl.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +440,18 @@
 			files = (
 				EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */,
 				0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */,
+				EE5BB7F91FBF406D00486581 /* Contrast.swift in Sources */,
+				EE5BB7FB1FBF418400486581 /* DynamicType.swift in Sources */,
 				0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */,
 				EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */,
 				0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */,
+				EE5BB7F71FBF3ECE00486581 /* LabelInformativeControls.swift in Sources */,
 				0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */,
 				0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */,
 				EE5BB7E41FBC887800486581 /* InformativeFocusableControls.swift in Sources */,
 				EE5BB7E31FBC887800486581 /* ElementInFocusBox.swift in Sources */,
 				0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */,
+				EE5BB7FF1FBF551800486581 /* InformativeControlViewController.swift in Sources */,
 				0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */,
 				EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */,
 				EE5BB7E21FBC887800486581 /* VoiceOverNavigation.swift in Sources */,
@@ -592,11 +612,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = AttestiOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -610,11 +630,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = AttestiOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

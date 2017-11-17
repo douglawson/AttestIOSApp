@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contrast-->
         <scene sceneID="MXe-qj-2Ef">
             <objects>
-                <viewController storyboardIdentifier="ContrastAlphaBlend" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastAlphaBlend" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tw3-5x-l2X" customClass="Contrast" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z7b-Ea-d4r"/>
                         <viewControllerLayoutGuide type="bottom" id="bBf-ZQ-kNL"/>
@@ -100,14 +100,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZe-MT-l6Y">
+                                        <rect key="frame" x="20" y="330.5" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.3">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.3">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="Tw3-5x-l2X" eventType="touchUpInside" id="kdi-wc-1hZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="AZe-MT-l6Y" firstAttribute="leading" secondItem="HHj-1H-t0g" secondAttribute="leading" id="0QA-6g-9px"/>
                                     <constraint firstItem="Tpe-a1-UbL" firstAttribute="leading" secondItem="6CP-IE-nKI" secondAttribute="leading" id="6ja-Bx-eyJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="HHj-1H-t0g" secondAttribute="bottom" constant="20" id="8wA-Mg-Y8a"/>
                                     <constraint firstItem="lGo-qm-4hU" firstAttribute="trailing" secondItem="APn-as-OVi" secondAttribute="trailing" id="BHP-NB-s1y"/>
+                                    <constraint firstItem="AZe-MT-l6Y" firstAttribute="top" secondItem="HHj-1H-t0g" secondAttribute="bottom" constant="20" id="Bjj-NW-G6m"/>
                                     <constraint firstItem="Tpe-a1-UbL" firstAttribute="trailing" secondItem="6CP-IE-nKI" secondAttribute="trailing" id="FMV-DF-Ksh"/>
                                     <constraint firstItem="lGo-qm-4hU" firstAttribute="top" secondItem="Tpe-a1-UbL" secondAttribute="bottom" constant="10" id="KkC-bH-VsD"/>
                                     <constraint firstItem="APn-as-OVi" firstAttribute="top" secondItem="6CP-IE-nKI" secondAttribute="bottom" constant="10" id="P48-Er-qNy"/>
+                                    <constraint firstAttribute="bottom" secondItem="AZe-MT-l6Y" secondAttribute="bottom" constant="20" id="SHI-Xk-pEp"/>
                                     <constraint firstItem="6CP-IE-nKI" firstAttribute="top" secondItem="lGo-qm-4hU" secondAttribute="bottom" constant="10" id="Vwr-uF-2lo"/>
                                     <constraint firstItem="lGo-qm-4hU" firstAttribute="leading" secondItem="APn-as-OVi" secondAttribute="leading" id="avQ-pg-aof"/>
                                     <constraint firstItem="Tpe-a1-UbL" firstAttribute="top" secondItem="NfY-R5-iXA" secondAttribute="top" constant="20" id="f3U-dl-XOP"/>
@@ -135,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="-794.39999999999998" y="71.514242878560722"/>
         </scene>
-        <!--View Controller-->
+        <!--Contrast-->
         <scene sceneID="dCq-mz-IbZ">
             <objects>
-                <viewController storyboardIdentifier="ContrastAlphaBlendText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastAlphaBlendText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T3O-N4-Kau" customClass="Contrast" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GlR-Wg-kY9"/>
                         <viewControllerLayoutGuide type="bottom" id="ClF-J1-SVZ"/>
@@ -230,8 +245,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9y-VP-lfs">
+                                        <rect key="frame" x="20" y="306.5" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.3">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.3">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="T3O-N4-Kau" eventType="touchUpInside" id="pMT-Fm-qH7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="t9y-VP-lfs" firstAttribute="leading" secondItem="SoA-Gz-C3r" secondAttribute="leading" id="37d-mW-Lfe"/>
                                     <constraint firstItem="P5I-F6-eL6" firstAttribute="top" secondItem="Kq7-KX-9oM" secondAttribute="top" constant="20" id="AvI-yk-DOU"/>
                                     <constraint firstAttribute="trailing" secondItem="N3p-fr-B0m" secondAttribute="trailing" constant="30" id="IBc-Ky-Ujz"/>
                                     <constraint firstItem="P5I-F6-eL6" firstAttribute="trailing" secondItem="nvT-VF-VeQ" secondAttribute="trailing" id="NyV-wI-Mqy"/>
@@ -241,13 +270,14 @@
                                     <constraint firstItem="P5I-F6-eL6" firstAttribute="leading" secondItem="Kq7-KX-9oM" secondAttribute="leading" constant="20" id="cCQ-UU-1k0"/>
                                     <constraint firstItem="nvT-VF-VeQ" firstAttribute="top" secondItem="N3p-fr-B0m" secondAttribute="bottom" constant="10" id="dG0-Kl-E4f"/>
                                     <constraint firstItem="urT-Qc-95s" firstAttribute="top" secondItem="nvT-VF-VeQ" secondAttribute="bottom" constant="10" id="e2S-bB-S1v"/>
-                                    <constraint firstAttribute="bottom" secondItem="SoA-Gz-C3r" secondAttribute="bottom" constant="20" id="gJO-R6-Dbi"/>
+                                    <constraint firstItem="t9y-VP-lfs" firstAttribute="top" secondItem="SoA-Gz-C3r" secondAttribute="bottom" constant="20" id="gMr-SI-dl0"/>
                                     <constraint firstItem="SoA-Gz-C3r" firstAttribute="top" secondItem="urT-Qc-95s" secondAttribute="bottom" constant="10" id="h10-gv-Xuq"/>
                                     <constraint firstItem="N3p-fr-B0m" firstAttribute="trailing" secondItem="urT-Qc-95s" secondAttribute="trailing" id="mkN-Tm-IcP"/>
                                     <constraint firstItem="N3p-fr-B0m" firstAttribute="leading" secondItem="urT-Qc-95s" secondAttribute="leading" id="nTa-K5-65s"/>
                                     <constraint firstItem="P5I-F6-eL6" firstAttribute="leading" secondItem="nvT-VF-VeQ" secondAttribute="leading" id="seM-h7-mv6"/>
                                     <constraint firstItem="nvT-VF-VeQ" firstAttribute="leading" secondItem="SoA-Gz-C3r" secondAttribute="leading" id="t1q-Ep-rGQ"/>
                                     <constraint firstAttribute="trailing" secondItem="P5I-F6-eL6" secondAttribute="trailing" constant="20" id="vW5-bE-1MC"/>
+                                    <constraint firstAttribute="bottom" secondItem="t9y-VP-lfs" secondAttribute="bottom" constant="20" id="yQH-l1-Gxl"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -265,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="-154" y="72"/>
         </scene>
-        <!--View Controller-->
+        <!--Contrast-->
         <scene sceneID="SmE-yd-QTK">
             <objects>
-                <viewController storyboardIdentifier="Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contrast" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EhW-6f-GQp" customClass="Contrast" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MkC-ol-dER"/>
                         <viewControllerLayoutGuide type="bottom" id="jZH-Cf-Hmx"/>
@@ -356,6 +386,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiA-X8-okS">
+                                        <rect key="frame" x="20" y="329.5" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="understanding w cag 1.4.3">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.3">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="EhW-6f-GQp" eventType="touchUpInside" id="Ije-9l-4hi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="36f-pI-ARv" firstAttribute="top" secondItem="Xcb-ek-3Aa" secondAttribute="bottom" constant="10" id="5Ee-mB-tlY"/>
@@ -365,14 +408,16 @@
                                     <constraint firstItem="Xcb-ek-3Aa" firstAttribute="top" secondItem="5AI-s1-Zfr" secondAttribute="top" constant="20" id="Hcy-aR-B5b"/>
                                     <constraint firstItem="6oX-F1-buv" firstAttribute="top" secondItem="ZYT-ha-ncv" secondAttribute="bottom" constant="10" id="N4o-F1-Z7H"/>
                                     <constraint firstItem="ZYT-ha-ncv" firstAttribute="trailing" secondItem="Xcb-ek-3Aa" secondAttribute="trailing" id="RjI-SR-zgV"/>
-                                    <constraint firstAttribute="bottom" secondItem="Smf-Ep-1fs" secondAttribute="bottom" constant="20" id="cdR-gX-FCd"/>
+                                    <constraint firstItem="CiA-X8-okS" firstAttribute="leading" secondItem="Smf-Ep-1fs" secondAttribute="leading" id="ZxE-EG-ehF"/>
                                     <constraint firstItem="6oX-F1-buv" firstAttribute="trailing" secondItem="36f-pI-ARv" secondAttribute="trailing" id="cgj-aW-Aiu"/>
                                     <constraint firstAttribute="trailing" secondItem="Xcb-ek-3Aa" secondAttribute="trailing" constant="20" id="iKQ-t5-vgE"/>
                                     <constraint firstAttribute="trailing" secondItem="36f-pI-ARv" secondAttribute="trailing" constant="30" id="jCp-W4-PFX"/>
                                     <constraint firstItem="Smf-Ep-1fs" firstAttribute="trailing" secondItem="ZYT-ha-ncv" secondAttribute="trailing" id="lBl-53-Spj"/>
                                     <constraint firstItem="Smf-Ep-1fs" firstAttribute="leading" secondItem="ZYT-ha-ncv" secondAttribute="leading" id="lLP-0g-hJf"/>
                                     <constraint firstItem="ZYT-ha-ncv" firstAttribute="top" secondItem="36f-pI-ARv" secondAttribute="bottom" constant="10" id="lud-b0-ehu"/>
+                                    <constraint firstItem="CiA-X8-okS" firstAttribute="top" secondItem="Smf-Ep-1fs" secondAttribute="bottom" constant="20" id="pcg-0S-aec"/>
                                     <constraint firstItem="6oX-F1-buv" firstAttribute="leading" secondItem="36f-pI-ARv" secondAttribute="leading" id="rnP-Xb-jq2"/>
+                                    <constraint firstAttribute="bottom" secondItem="CiA-X8-okS" secondAttribute="bottom" constant="20" id="vLk-bu-rqc"/>
                                     <constraint firstItem="36f-pI-ARv" firstAttribute="leading" secondItem="5AI-s1-Zfr" secondAttribute="leading" constant="30" id="x3J-Bh-TCK"/>
                                 </constraints>
                             </scrollView>
@@ -389,12 +434,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vt-fb-eUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="72"/>
+            <point key="canvasLocation" x="485.60000000000002" y="71.514242878560722"/>
         </scene>
-        <!--View Controller-->
+        <!--Contrast-->
         <scene sceneID="qVu-5E-7ee">
             <objects>
-                <viewController storyboardIdentifier="ContrastLargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContrastLargeText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JmM-xb-UeN" customClass="Contrast" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fy-Ab-xJz"/>
                         <viewControllerLayoutGuide type="bottom" id="BeS-5T-3zR"/>
@@ -484,9 +529,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO7-Sh-VA9">
+                                        <rect key="frame" x="20" y="396" width="208" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 1.4.3">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 1.4.3">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="JmM-xb-UeN" eventType="touchUpInside" id="qaQ-66-k7L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="GKQ-4D-NS8" secondAttribute="bottom" constant="10" id="7J9-UL-0Zn"/>
                                     <constraint firstItem="wZA-Sg-bJD" firstAttribute="trailing" secondItem="GKQ-4D-NS8" secondAttribute="trailing" id="Egg-7d-Tsu"/>
                                     <constraint firstAttribute="trailing" secondItem="us9-8i-6TJ" secondAttribute="trailing" constant="20" id="HQc-Tq-z8V"/>
                                     <constraint firstItem="wZA-Sg-bJD" firstAttribute="top" secondItem="0qh-PO-Q7e" secondAttribute="bottom" constant="10" id="IQQ-LD-a0e"/>
@@ -496,7 +553,10 @@
                                     <constraint firstItem="GKQ-4D-NS8" firstAttribute="top" secondItem="AS6-Ro-Snb" secondAttribute="bottom" constant="10" id="ZB0-gG-akT"/>
                                     <constraint firstItem="us9-8i-6TJ" firstAttribute="leading" secondItem="LgJ-Hi-prJ" secondAttribute="leading" constant="20" id="aFL-eO-H7U"/>
                                     <constraint firstItem="0qh-PO-Q7e" firstAttribute="top" secondItem="us9-8i-6TJ" secondAttribute="bottom" constant="10" id="awc-mP-hiV"/>
+                                    <constraint firstItem="aO7-Sh-VA9" firstAttribute="leading" secondItem="GKQ-4D-NS8" secondAttribute="leading" id="bGI-pf-egP"/>
+                                    <constraint firstAttribute="bottom" secondItem="aO7-Sh-VA9" secondAttribute="bottom" constant="20" id="daE-bA-cFA"/>
                                     <constraint firstItem="AS6-Ro-Snb" firstAttribute="trailing" secondItem="0qh-PO-Q7e" secondAttribute="trailing" id="hdU-e6-agY"/>
+                                    <constraint firstItem="aO7-Sh-VA9" firstAttribute="top" secondItem="GKQ-4D-NS8" secondAttribute="bottom" constant="20" id="mnF-za-cG5"/>
                                     <constraint firstItem="AS6-Ro-Snb" firstAttribute="top" secondItem="wZA-Sg-bJD" secondAttribute="bottom" constant="10" id="qz6-V0-Hd5"/>
                                     <constraint firstItem="us9-8i-6TJ" firstAttribute="leading" secondItem="wZA-Sg-bJD" secondAttribute="leading" id="ugu-mu-3ua"/>
                                     <constraint firstItem="wZA-Sg-bJD" firstAttribute="leading" secondItem="GKQ-4D-NS8" secondAttribute="leading" id="vjr-9C-bgg"/>

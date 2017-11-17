@@ -21,16 +21,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-10-L50">
-                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VoiceOver Navigation Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-2k-AJ2">
-                                        <rect key="frame" x="20" y="20" width="336" height="20.5"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZz-Dg-rdo" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="29.5" y="50.5" width="316.5" height="112"/>
+                                        <rect key="frame" x="29.5" y="50.5" width="315.5" height="112"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l60-jH-5bd">
                                                 <rect key="frame" x="10" y="40" width="62" height="62"/>
@@ -45,7 +45,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlo-9w-V8D">
-                                                <rect key="frame" x="244.5" y="10" width="62" height="62"/>
+                                                <rect key="frame" x="243.5" y="10" width="62" height="62"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="3W4-Yo-gyv"/>
@@ -57,7 +57,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-CM-TpY">
-                                                <rect key="frame" x="127.5" y="25" width="62" height="62"/>
+                                                <rect key="frame" x="127" y="25" width="62" height="62"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="62" id="05x-Op-ucH"/>
@@ -81,20 +81,20 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With VoiceOver on, the layout is very non-obvious. Button C gets focused before Button A, which is counter intuitive." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luq-UF-BDy">
-                                        <rect key="frame" x="20" y="172.5" width="336.5" height="64.5"/>
+                                        <rect key="frame" x="20" y="172.5" width="335.5" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eho-r2-Hah">
-                                        <rect key="frame" x="20" y="369" width="336.5" height="108.5"/>
+                                        <rect key="frame" x="20" y="369" width="335.5" height="108.5"/>
                                         <string key="text">To fix this, you can override the property "accessibilityElements" in a view, and place the elements in order of how they should be read by VoiceOver. Now, VoiceOver correctly focuses from A to B to C.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-3y-u13" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="29" y="247" width="317" height="112"/>
+                                        <rect key="frame" x="29" y="247" width="316" height="112"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWe-x5-pUa">
                                                 <rect key="frame" x="10" y="40" width="62" height="62"/>
@@ -109,7 +109,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFS-Kd-PbG">
-                                                <rect key="frame" x="127.5" y="25" width="62" height="62"/>
+                                                <rect key="frame" x="127" y="25" width="62" height="62"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="4vg-tL-gRa"/>
@@ -121,7 +121,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ui-Li-NHC">
-                                                <rect key="frame" x="245" y="10" width="62" height="62"/>
+                                                <rect key="frame" x="244" y="10" width="62" height="62"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="62" id="JNl-sB-2sj"/>
@@ -144,6 +144,19 @@
                                             <constraint firstItem="7Ui-Li-NHC" firstAttribute="top" secondItem="d9E-3y-u13" secondAttribute="top" constant="10" id="lAm-nN-SrH"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvf-Q5-Nlh">
+                                        <rect key="frame" x="20" y="497.5" width="210" height="33"/>
+                                        <accessibility key="accessibilityConfiguration" label="Understanding W cag 2.4.3">
+                                            <accessibilityTraits key="traits" link="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Understanding WCAG 2.4.3">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wcagLink" destination="Sdl-HQ-xG9" eventType="touchUpInside" id="jvF-cw-zJZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xZz-Dg-rdo" firstAttribute="trailing" secondItem="d9E-3y-u13" secondAttribute="trailing" id="0sa-Y9-s6c"/>
@@ -151,14 +164,16 @@
                                     <constraint firstItem="Eho-r2-Hah" firstAttribute="top" secondItem="d9E-3y-u13" secondAttribute="bottom" constant="10" id="3ct-Nd-ZPz"/>
                                     <constraint firstAttribute="trailing" secondItem="g7s-2k-AJ2" secondAttribute="trailing" constant="20" id="5HP-X9-p0c"/>
                                     <constraint firstItem="xZz-Dg-rdo" firstAttribute="top" secondItem="g7s-2k-AJ2" secondAttribute="bottom" constant="10" id="8HI-lT-Ydf"/>
+                                    <constraint firstItem="cvf-Q5-Nlh" firstAttribute="leading" secondItem="Eho-r2-Hah" secondAttribute="leading" id="9no-ik-m4h"/>
+                                    <constraint firstItem="cvf-Q5-Nlh" firstAttribute="top" secondItem="Eho-r2-Hah" secondAttribute="bottom" constant="20" id="CMe-s4-NN4"/>
                                     <constraint firstAttribute="trailing" secondItem="xZz-Dg-rdo" secondAttribute="trailing" constant="30" id="CyI-nn-kcQ"/>
                                     <constraint firstItem="luq-UF-BDy" firstAttribute="leading" secondItem="Eho-r2-Hah" secondAttribute="leading" id="DIM-b0-aj8"/>
-                                    <constraint firstAttribute="bottom" secondItem="Eho-r2-Hah" secondAttribute="bottom" constant="20" id="IaC-HZ-ris"/>
                                     <constraint firstItem="g7s-2k-AJ2" firstAttribute="trailing" secondItem="luq-UF-BDy" secondAttribute="trailing" id="OMd-m2-ANS"/>
                                     <constraint firstItem="d9E-3y-u13" firstAttribute="top" secondItem="luq-UF-BDy" secondAttribute="bottom" constant="10" id="P4T-De-GFF"/>
                                     <constraint firstItem="luq-UF-BDy" firstAttribute="trailing" secondItem="Eho-r2-Hah" secondAttribute="trailing" id="PEn-Ii-N9h"/>
                                     <constraint firstItem="g7s-2k-AJ2" firstAttribute="top" secondItem="ddI-10-L50" secondAttribute="top" constant="20" id="Vp9-6d-hIs"/>
                                     <constraint firstItem="g7s-2k-AJ2" firstAttribute="leading" secondItem="ddI-10-L50" secondAttribute="leading" constant="20" id="afK-Rm-POB"/>
+                                    <constraint firstAttribute="bottom" secondItem="cvf-Q5-Nlh" secondAttribute="bottom" constant="20" id="cOw-0w-uMs"/>
                                     <constraint firstItem="luq-UF-BDy" firstAttribute="top" secondItem="xZz-Dg-rdo" secondAttribute="bottom" constant="10" id="glC-Sy-Bhl"/>
                                     <constraint firstItem="xZz-Dg-rdo" firstAttribute="leading" secondItem="d9E-3y-u13" secondAttribute="leading" id="poy-s0-ieM"/>
                                     <constraint firstItem="g7s-2k-AJ2" firstAttribute="leading" secondItem="luq-UF-BDy" secondAttribute="leading" id="uKp-ie-YTT"/>

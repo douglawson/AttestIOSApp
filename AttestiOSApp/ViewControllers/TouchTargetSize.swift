@@ -15,6 +15,11 @@ class TouchTargetSize: UIViewController {
     @IBOutlet weak var fixedView: FixedView!
     @IBOutlet weak var fixedSwitchView: UIView!
     
+    @IBAction func wcagLink() {
+        let url = URL(string: "https://www.w3.org/TR/WCAG21/#target-size")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
+    
     // Called by brokenSwitch
     @IBAction func changeBackgroundColor(_ sender: Any) {
         if (sender as! UISwitch).isOn {
